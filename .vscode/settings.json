@@ -1,0 +1,38 @@
+{
+  // ❌ Disable editor auto suggestions
+  "editor.quickSuggestions": {
+    "comments": "off",
+    "strings": "off",
+    "other": "off"
+  },
+  "editor.suggestOnTriggerCharacters": false,
+  "editor.parameterHints.enabled": false,
+  "editor.inlineSuggest.enabled": false,
+
+  // ❌ Disable JS specific suggestions
+  "[javascript]": {
+    "editor.quickSuggestions": {
+      "comments": "off",
+      "strings": "off",
+      "other": "off"
+    },
+    "editor.suggestOnTriggerCharacters": false
+  },
+
+  // (Optional) JS uses TS engine internally
+  "[typescript]": {
+    "editor.quickSuggestions": {
+      "comments": "off",
+      "strings": "off",
+      "other": "off"
+    },
+    "editor.suggestOnTriggerCharacters": false
+  },
+
+  // ✅ Keep terminal suggestions (optional)
+  "terminal.integrated.suggest.quickSuggestions": {
+    "commands": "on",
+    "arguments": "on",
+    "unknown": "off"
+  }
+}

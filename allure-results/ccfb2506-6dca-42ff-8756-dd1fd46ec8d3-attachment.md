@@ -1,0 +1,1051 @@
+# Page snapshot
+
+```yaml
+- generic [ref=e3]:
+  - generic [ref=e7]:
+    - generic [ref=e9]:
+      - link "Flipkart" [ref=e10] [cursor=pointer]:
+        - /url: /
+        - img "Flipkart" [ref=e11]
+      - link "Explore Plus" [ref=e12] [cursor=pointer]:
+        - /url: /plus
+        - text: Explore Plus
+        - img [ref=e13]
+    - generic [ref=e16]:
+      - textbox "Search for products, brands and more" [ref=e18]: iphone 14 pro max
+      - button [ref=e19] [cursor=pointer]:
+        - img [ref=e20]
+    - link "Login" [ref=e28] [cursor=pointer]:
+      - /url: /account/login?ret=/search%3Fq%3Diphone%252014%2520pro%2520max%26otracker%3Dsearch%26otracker1%3Dsearch%26marketplace%3DFLIPKART%26as-show%3Doff%26as%3Doff
+    - link "Become a Seller" [ref=e30] [cursor=pointer]:
+      - /url: https://seller.flipkart.com/sell-online/?utm_source=fkwebsite&utm_medium=websitedirect
+      - generic [ref=e31]: Become a Seller
+    - generic [ref=e33] [cursor=pointer]:
+      - generic [ref=e36]: More
+      - img [ref=e37]
+    - link "Cart" [ref=e42] [cursor=pointer]:
+      - /url: /viewcart?exploreMode=true&preference=FLIPKART
+      - img [ref=e43]
+      - generic [ref=e45]: Cart
+  - generic [ref=e50]:
+    - generic [ref=e51] [cursor=pointer]:
+      - text: Electronics
+      - img [ref=e52]
+    - generic [ref=e54] [cursor=pointer]:
+      - text: TVs & Appliances
+      - img [ref=e55]
+    - generic [ref=e57] [cursor=pointer]:
+      - text: Men
+      - img [ref=e58]
+    - generic [ref=e60] [cursor=pointer]:
+      - text: Women
+      - img [ref=e61]
+    - generic [ref=e63] [cursor=pointer]:
+      - text: Baby & Kids
+      - img [ref=e64]
+    - generic [ref=e66] [cursor=pointer]:
+      - text: Home & Furniture
+      - img [ref=e67]
+    - generic [ref=e69] [cursor=pointer]:
+      - text: Sports, Books & More
+      - img [ref=e70]
+    - link "Flights" [ref=e72] [cursor=pointer]:
+      - /url: /travel/flights?otracker=nmenu_Flights
+    - link "Offer Zone" [ref=e73] [cursor=pointer]:
+      - /url: /offers-list/top-deals?screen=dynamic&pk=themeViews%3DDT-OMU-A2%3ADT-OMU~widgetType%3DdealCard~contentType%3Dneo&otracker=nmenu_offer-zone
+  - generic [ref=e75]:
+    - generic [ref=e77]:
+      - generic [ref=e79]:
+        - generic [ref=e82]: Filters
+        - generic [ref=e84]:
+          - generic [ref=e85]: CATEGORIES
+          - generic [ref=e87]:
+            - img [ref=e89] [cursor=pointer]
+            - link "Mobiles & Accessories" [ref=e91] [cursor=pointer]:
+              - /url: /mobiles-accessories/pr?sid=tyy&q=iphone+14+pro+max&otracker=categorytree
+          - generic [ref=e93]:
+            - img [ref=e95] [cursor=pointer]
+            - link "Mobiles" [ref=e97] [cursor=pointer]:
+              - /url: /mobiles/pr?sid=tyy,4io&q=iphone+14+pro+max&otracker=categorytree
+        - generic [ref=e98]:
+          - generic [ref=e100]: Price
+          - generic [ref=e112]:
+            - generic [ref=e113]: .
+            - generic [ref=e114]: .
+            - generic [ref=e115]: .
+            - generic [ref=e116]: .
+            - generic [ref=e117]: .
+            - generic: .
+          - generic [ref=e118]:
+            - combobox [ref=e120]:
+              - option "Min" [selected]
+              - option "₹10000"
+              - option "₹15000"
+              - option "₹20000"
+              - option "₹30000"
+            - generic [ref=e121]: to
+            - combobox [ref=e123]:
+              - option "₹10000"
+              - option "₹15000"
+              - option "₹20000"
+              - option "₹30000"
+              - option "₹30000+" [selected]
+        - generic [ref=e124]:
+          - generic [ref=e125] [cursor=pointer]:
+            - generic [ref=e126]: Brand
+            - img [ref=e127]
+          - generic "Apple" [ref=e131] [cursor=pointer]:
+            - generic [ref=e135]: Apple
+        - generic [ref=e136]:
+          - img [ref=e141] [cursor=pointer]
+          - generic [ref=e143] [cursor=pointer]: "?"
+        - generic [ref=e145] [cursor=pointer]:
+          - generic [ref=e146]: Customer Ratings
+          - img [ref=e147]
+        - generic [ref=e150] [cursor=pointer]:
+          - generic [ref=e151]: GST Invoice Available
+          - img [ref=e152]
+        - generic [ref=e154]:
+          - generic [ref=e155] [cursor=pointer]:
+            - generic [ref=e156]: RAM
+            - img [ref=e157]
+          - generic "1GB and Below" [ref=e161] [cursor=pointer]:
+            - generic [ref=e165]: 1GB and Below
+        - generic [ref=e167] [cursor=pointer]:
+          - generic [ref=e168]: Internal Storage
+          - img [ref=e169]
+        - generic [ref=e172] [cursor=pointer]:
+          - generic [ref=e173]: Battery Capacity
+          - img [ref=e174]
+        - generic [ref=e177] [cursor=pointer]:
+          - generic [ref=e178]: Screen Size
+          - img [ref=e179]
+        - generic [ref=e182] [cursor=pointer]:
+          - generic [ref=e183]: Primary Camera
+          - img [ref=e184]
+        - generic [ref=e187] [cursor=pointer]:
+          - generic [ref=e188]: Secondary Camera
+          - img [ref=e189]
+        - generic [ref=e192] [cursor=pointer]:
+          - generic [ref=e193]: Speciality
+          - img [ref=e194]
+        - generic [ref=e197] [cursor=pointer]:
+          - generic [ref=e198]: Resolution Type
+          - img [ref=e199]
+        - generic [ref=e202] [cursor=pointer]:
+          - generic [ref=e203]: Operating System
+          - img [ref=e204]
+        - generic [ref=e207] [cursor=pointer]:
+          - generic [ref=e208]: Network Type
+          - img [ref=e209]
+        - generic [ref=e212] [cursor=pointer]:
+          - generic [ref=e213]: Sim Type
+          - img [ref=e214]
+        - generic [ref=e216]:
+          - generic [ref=e217] [cursor=pointer]:
+            - generic [ref=e218]: Offers
+            - img [ref=e219]
+          - generic [ref=e222]:
+            - generic "Special Price" [ref=e223] [cursor=pointer]:
+              - generic [ref=e227]: Special Price
+            - generic "Buy More, Save More" [ref=e228] [cursor=pointer]:
+              - generic [ref=e232]: Buy More, Save More
+            - generic "No Cost EMI" [ref=e233] [cursor=pointer]:
+              - generic [ref=e237]: No Cost EMI
+        - generic [ref=e239] [cursor=pointer]:
+          - generic [ref=e240]: Features
+          - img [ref=e241]
+        - generic [ref=e244] [cursor=pointer]:
+          - generic [ref=e245]: Type
+          - img [ref=e246]
+        - generic [ref=e249] [cursor=pointer]:
+          - generic [ref=e250]: Number of Cores
+          - img [ref=e251]
+        - generic [ref=e254] [cursor=pointer]:
+          - generic [ref=e255]: Availability
+          - img [ref=e256]
+        - generic [ref=e258]:
+          - generic [ref=e259] [cursor=pointer]:
+            - generic [ref=e260]: Discount
+            - img [ref=e261]
+          - generic [ref=e264]:
+            - generic "50% or more" [ref=e265] [cursor=pointer]:
+              - generic [ref=e269]: 50% or more
+            - generic "40% or more" [ref=e270] [cursor=pointer]:
+              - generic [ref=e274]: 40% or more
+            - generic "30% or more" [ref=e275] [cursor=pointer]:
+              - generic [ref=e279]: 30% or more
+            - generic "20% or more" [ref=e280] [cursor=pointer]:
+              - generic [ref=e284]: 20% or more
+            - generic "10% or more" [ref=e285] [cursor=pointer]:
+              - generic [ref=e289]: 10% or more
+        - generic [ref=e291] [cursor=pointer]:
+          - generic [ref=e292]: Clock Speed
+          - img [ref=e293]
+      - link "Need help? Help me decide Buying Guide" [ref=e296] [cursor=pointer]:
+        - /url: /buying-guide/mobiles?sid=tyy,4io&otracker=bg_from_browse_lhs
+        - generic [ref=e297]: Need help?
+        - generic [ref=e298]:
+          - text: Help me decide
+          - img [ref=e299]
+        - img "Buying Guide" [ref=e301]
+    - generic [ref=e302]:
+      - generic [ref=e305]:
+        - generic [ref=e306]:
+          - generic [ref=e307]:
+            - link "Home" [ref=e308] [cursor=pointer]:
+              - /url: /
+            - img [ref=e309]
+          - generic [ref=e311]:
+            - link "Mobiles & Accessories" [ref=e312] [cursor=pointer]:
+              - /url: /mobiles-accessories/pr?sid=tyy&marketplace=FLIPKART
+            - img [ref=e313]
+          - link "Mobiles" [ref=e316] [cursor=pointer]:
+            - /url: /mobiles/pr?sid=tyy,4io&marketplace=FLIPKART
+        - generic [ref=e317]: Showing 1 – 24 of 28 results for "iphone 14 pro max"
+        - generic [ref=e318]:
+          - generic [ref=e319]: Sort By
+          - generic [ref=e320]: Relevance
+          - generic [ref=e321] [cursor=pointer]: Popularity
+          - generic [ref=e322] [cursor=pointer]: Price -- Low to High
+          - generic [ref=e323] [cursor=pointer]: Price -- High to Low
+          - generic [ref=e324] [cursor=pointer]: Newest First
+      - link "Apple iPhone 14 Pro Max (Silver, 512 GB) Currently unavailable Add to Compare Apple iPhone 14 Pro Max (Silver, 512 GB) 4.6 2,409 Ratings & 165 Reviews • 512 GB ROM • 17.02 cm (6.7 inch) Super Retina XDR Display • 48MP + 12MP + 12MP | 12MP Front Camera • A16 Bionic Chip, 6 Core Processor Processor • 1 year warranty for phone and 1 year warranty for in Box Accessories. ₹1,64,900 Upto ₹57,400 Off on Exchange Bank Offer" [ref=e329] [cursor=pointer]:
+        - /url: /apple-iphone-14-pro-max-silver-512-gb/p/itm450e8757732f9?pid=MOBGHWFHEQA2GSCS&lid=LSTMOBGHWFHEQA2GSCSRTXNPU&marketplace=FLIPKART&q=iphone+14+pro+max&store=tyy%2F4io&srno=s_1_1&otracker=search&otracker1=search&fm=organic&iid=446c9d8b-f1a5-4472-bcd7-4ec1db4998be.MOBGHWFHEQA2GSCS.SEARCH&ppt=hp&ppn=homepage&ssid=arxihc0qv2jf4xz41767786961442&qH=37e37d60a349d989
+        - generic [ref=e330]:
+          - generic [ref=e331]:
+            - img "Apple iPhone 14 Pro Max (Silver, 512 GB)" [ref=e334]
+            - generic: Currently unavailable
+          - generic [ref=e340]: Add to Compare
+          - img [ref=e343]
+        - generic [ref=e345]:
+          - generic [ref=e346]:
+            - generic [ref=e347]: Apple iPhone 14 Pro Max (Silver, 512 GB)
+            - generic [ref=e348]:
+              - generic [ref=e350]:
+                - text: "4.6"
+                - img [ref=e351]
+              - generic [ref=e353]: 2,409 Ratings & 165 Reviews
+            - list [ref=e355]:
+              - listitem [ref=e356]: • 512 GB ROM
+              - listitem [ref=e357]: • 17.02 cm (6.7 inch) Super Retina XDR Display
+              - listitem [ref=e358]: • 48MP + 12MP + 12MP | 12MP Front Camera
+              - listitem [ref=e359]: • A16 Bionic Chip, 6 Core Processor Processor
+              - listitem [ref=e360]: • 1 year warranty for phone and 1 year warranty for in Box Accessories.
+          - generic [ref=e361]:
+            - generic [ref=e364]: ₹1,64,900
+            - img [ref=e366]
+            - generic [ref=e368]:
+              - generic [ref=e369]: Upto
+              - generic [ref=e370]: ₹57,400
+              - generic [ref=e371]: Off on Exchange
+            - generic [ref=e374]: Bank Offer
+      - link "Apple iPhone 14 Pro Max (Gold, 512 GB) Currently unavailable Add to Compare Apple iPhone 14 Pro Max (Gold, 512 GB) 4.6 2,409 Ratings & 165 Reviews • 512 GB ROM • 17.02 cm (6.7 inch) Super Retina XDR Display • 48MP + 12MP + 12MP | 12MP Front Camera • A16 Bionic Chip, 6 Core Processor Processor • 1 year warranty for phone and 1 year warranty for in Box Accessories. ₹1,64,900 Upto ₹57,400 Off on Exchange Bank Offer" [ref=e379] [cursor=pointer]:
+        - /url: /apple-iphone-14-pro-max-gold-512-gb/p/itm6ab4bc3095a65?pid=MOBGHWFHZAXBEPXV&lid=LSTMOBGHWFHZAXBEPXVDYYT8X&marketplace=FLIPKART&q=iphone+14+pro+max&store=tyy%2F4io&srno=s_1_2&otracker=search&otracker1=search&fm=organic&iid=446c9d8b-f1a5-4472-bcd7-4ec1db4998be.MOBGHWFHZAXBEPXV.SEARCH&ppt=hp&ppn=homepage&ssid=arxihc0qv2jf4xz41767786961442&qH=37e37d60a349d989
+        - generic [ref=e380]:
+          - generic [ref=e381]:
+            - img "Apple iPhone 14 Pro Max (Gold, 512 GB)" [ref=e384]
+            - generic: Currently unavailable
+          - generic [ref=e390]: Add to Compare
+          - img [ref=e393]
+        - generic [ref=e395]:
+          - generic [ref=e396]:
+            - generic [ref=e397]: Apple iPhone 14 Pro Max (Gold, 512 GB)
+            - generic [ref=e398]:
+              - generic [ref=e400]:
+                - text: "4.6"
+                - img [ref=e401]
+              - generic [ref=e403]: 2,409 Ratings & 165 Reviews
+            - list [ref=e405]:
+              - listitem [ref=e406]: • 512 GB ROM
+              - listitem [ref=e407]: • 17.02 cm (6.7 inch) Super Retina XDR Display
+              - listitem [ref=e408]: • 48MP + 12MP + 12MP | 12MP Front Camera
+              - listitem [ref=e409]: • A16 Bionic Chip, 6 Core Processor Processor
+              - listitem [ref=e410]: • 1 year warranty for phone and 1 year warranty for in Box Accessories.
+          - generic [ref=e411]:
+            - generic [ref=e414]: ₹1,64,900
+            - img [ref=e416]
+            - generic [ref=e418]:
+              - generic [ref=e419]: Upto
+              - generic [ref=e420]: ₹57,400
+              - generic [ref=e421]: Off on Exchange
+            - generic [ref=e424]: Bank Offer
+      - link "Apple iPhone 14 Pro Max (Space Black, 256 GB) Currently unavailable Add to Compare Apple iPhone 14 Pro Max (Space Black, 256 GB) 4.6 2,409 Ratings & 165 Reviews • 256 GB ROM • 17.02 cm (6.7 inch) Super Retina XDR Display • 48MP + 12MP + 12MP | 12MP Front Camera • A16 Bionic Chip, 6 Core Processor Processor • 1 year warranty for phone and 1 year warranty for in Box Accessories. ₹1,44,900 Upto ₹57,400 Off on Exchange Bank Offer" [ref=e429] [cursor=pointer]:
+        - /url: /apple-iphone-14-pro-max-space-black-256-gb/p/itm8a92b3d600e04?pid=MOBGHWFHSEZUKWDM&lid=LSTMOBGHWFHSEZUKWDMYTA3L3&marketplace=FLIPKART&q=iphone+14+pro+max&store=tyy%2F4io&srno=s_1_3&otracker=search&otracker1=search&fm=organic&iid=446c9d8b-f1a5-4472-bcd7-4ec1db4998be.MOBGHWFHSEZUKWDM.SEARCH&ppt=hp&ppn=homepage&ssid=arxihc0qv2jf4xz41767786961442&qH=37e37d60a349d989
+        - generic [ref=e430]:
+          - generic [ref=e431]:
+            - img "Apple iPhone 14 Pro Max (Space Black, 256 GB)" [ref=e434]
+            - generic: Currently unavailable
+          - generic [ref=e440]: Add to Compare
+          - img [ref=e443]
+        - generic [ref=e445]:
+          - generic [ref=e446]:
+            - generic [ref=e447]: Apple iPhone 14 Pro Max (Space Black, 256 GB)
+            - generic [ref=e448]:
+              - generic [ref=e450]:
+                - text: "4.6"
+                - img [ref=e451]
+              - generic [ref=e453]: 2,409 Ratings & 165 Reviews
+            - list [ref=e455]:
+              - listitem [ref=e456]: • 256 GB ROM
+              - listitem [ref=e457]: • 17.02 cm (6.7 inch) Super Retina XDR Display
+              - listitem [ref=e458]: • 48MP + 12MP + 12MP | 12MP Front Camera
+              - listitem [ref=e459]: • A16 Bionic Chip, 6 Core Processor Processor
+              - listitem [ref=e460]: • 1 year warranty for phone and 1 year warranty for in Box Accessories.
+          - generic [ref=e461]:
+            - generic [ref=e464]: ₹1,44,900
+            - img [ref=e466]
+            - generic [ref=e468]:
+              - generic [ref=e469]: Upto
+              - generic [ref=e470]: ₹57,400
+              - generic [ref=e471]: Off on Exchange
+            - generic [ref=e474]: Bank Offer
+      - link "Apple iPhone 14 Pro Max (Space Black, 512 GB) Currently unavailable Add to Compare Apple iPhone 14 Pro Max (Space Black, 512 GB) 4.6 2,409 Ratings & 165 Reviews • 512 GB ROM • 17.02 cm (6.7 inch) Super Retina XDR Display • 48MP + 12MP + 12MP | 12MP Front Camera • A16 Bionic Chip, 6 Core Processor Processor • 1 year warranty for phone and 1 year warranty for in Box Accessories. ₹1,64,900 Upto ₹57,400 Off on Exchange Bank Offer" [ref=e479] [cursor=pointer]:
+        - /url: /apple-iphone-14-pro-max-space-black-512-gb/p/itm68fe95bfc58dd?pid=MOBGHWFHSTGZHYAT&lid=LSTMOBGHWFHSTGZHYATUR8UUF&marketplace=FLIPKART&q=iphone+14+pro+max&store=tyy%2F4io&srno=s_1_4&otracker=search&otracker1=search&fm=organic&iid=446c9d8b-f1a5-4472-bcd7-4ec1db4998be.MOBGHWFHSTGZHYAT.SEARCH&ppt=hp&ppn=homepage&ssid=arxihc0qv2jf4xz41767786961442&qH=37e37d60a349d989
+        - generic [ref=e480]:
+          - generic [ref=e481]:
+            - img "Apple iPhone 14 Pro Max (Space Black, 512 GB)" [ref=e484]
+            - generic: Currently unavailable
+          - generic [ref=e490]: Add to Compare
+          - img [ref=e493]
+        - generic [ref=e495]:
+          - generic [ref=e496]:
+            - generic [ref=e497]: Apple iPhone 14 Pro Max (Space Black, 512 GB)
+            - generic [ref=e498]:
+              - generic [ref=e500]:
+                - text: "4.6"
+                - img [ref=e501]
+              - generic [ref=e503]: 2,409 Ratings & 165 Reviews
+            - list [ref=e505]:
+              - listitem [ref=e506]: • 512 GB ROM
+              - listitem [ref=e507]: • 17.02 cm (6.7 inch) Super Retina XDR Display
+              - listitem [ref=e508]: • 48MP + 12MP + 12MP | 12MP Front Camera
+              - listitem [ref=e509]: • A16 Bionic Chip, 6 Core Processor Processor
+              - listitem [ref=e510]: • 1 year warranty for phone and 1 year warranty for in Box Accessories.
+          - generic [ref=e511]:
+            - generic [ref=e514]: ₹1,64,900
+            - img [ref=e516]
+            - generic [ref=e518]:
+              - generic [ref=e519]: Upto
+              - generic [ref=e520]: ₹57,400
+              - generic [ref=e521]: Off on Exchange
+            - generic [ref=e524]: Bank Offer
+      - link "Apple iPhone 14 Pro Max (Space Black, 128 GB) Currently unavailable Add to Compare Apple iPhone 14 Pro Max (Space Black, 128 GB) 4.6 2,409 Ratings & 165 Reviews • 128 GB ROM • 17.02 cm (6.7 inch) Super Retina XDR Display • 48MP + 12MP + 12MP | 12MP Front Camera • A16 Bionic Chip, 6 Core Processor Processor • 1 year warranty for phone and 1 year warranty for in Box Accessories. ₹1,34,900 Upto ₹57,400 Off on Exchange Bank Offer" [ref=e529] [cursor=pointer]:
+        - /url: /apple-iphone-14-pro-max-space-black-128-gb/p/itm9aed88fe43457?pid=MOBGHWFHCNVGGMZF&lid=LSTMOBGHWFHCNVGGMZFHBFNOC&marketplace=FLIPKART&q=iphone+14+pro+max&store=tyy%2F4io&srno=s_1_5&otracker=search&otracker1=search&fm=organic&iid=446c9d8b-f1a5-4472-bcd7-4ec1db4998be.MOBGHWFHCNVGGMZF.SEARCH&ppt=hp&ppn=homepage&ssid=arxihc0qv2jf4xz41767786961442&qH=37e37d60a349d989
+        - generic [ref=e530]:
+          - generic [ref=e531]:
+            - img "Apple iPhone 14 Pro Max (Space Black, 128 GB)" [ref=e534]
+            - generic: Currently unavailable
+          - generic [ref=e540]: Add to Compare
+          - img [ref=e543]
+        - generic [ref=e545]:
+          - generic [ref=e546]:
+            - generic [ref=e547]: Apple iPhone 14 Pro Max (Space Black, 128 GB)
+            - generic [ref=e548]:
+              - generic [ref=e550]:
+                - text: "4.6"
+                - img [ref=e551]
+              - generic [ref=e553]: 2,409 Ratings & 165 Reviews
+            - list [ref=e555]:
+              - listitem [ref=e556]: • 128 GB ROM
+              - listitem [ref=e557]: • 17.02 cm (6.7 inch) Super Retina XDR Display
+              - listitem [ref=e558]: • 48MP + 12MP + 12MP | 12MP Front Camera
+              - listitem [ref=e559]: • A16 Bionic Chip, 6 Core Processor Processor
+              - listitem [ref=e560]: • 1 year warranty for phone and 1 year warranty for in Box Accessories.
+          - generic [ref=e561]:
+            - generic [ref=e564]: ₹1,34,900
+            - img [ref=e566]
+            - generic [ref=e568]:
+              - generic [ref=e569]: Upto
+              - generic [ref=e570]: ₹57,400
+              - generic [ref=e571]: Off on Exchange
+            - generic [ref=e574]: Bank Offer
+      - link "Apple iPhone 14 Pro Max (Deep Purple, 256 GB) Currently unavailable Add to Compare Apple iPhone 14 Pro Max (Deep Purple, 256 GB) 4.6 2,409 Ratings & 165 Reviews • 256 GB ROM • 17.02 cm (6.7 inch) Super Retina XDR Display • 48MP + 12MP + 12MP | 12MP Front Camera • A16 Bionic Chip, 6 Core Processor Processor • 1 year warranty for phone and 1 year warranty for in Box Accessories. ₹1,44,900 Upto ₹57,400 Off on Exchange Bank Offer" [ref=e579] [cursor=pointer]:
+        - /url: /apple-iphone-14-pro-max-deep-purple-256-gb/p/itm5d37f9e956ec7?pid=MOBGHWFHKTTFUQEH&lid=LSTMOBGHWFHKTTFUQEHOOGMRO&marketplace=FLIPKART&q=iphone+14+pro+max&store=tyy%2F4io&srno=s_1_6&otracker=search&otracker1=search&fm=organic&iid=446c9d8b-f1a5-4472-bcd7-4ec1db4998be.MOBGHWFHKTTFUQEH.SEARCH&ppt=hp&ppn=homepage&ssid=arxihc0qv2jf4xz41767786961442&qH=37e37d60a349d989
+        - generic [ref=e580]:
+          - generic [ref=e581]:
+            - img "Apple iPhone 14 Pro Max (Deep Purple, 256 GB)" [ref=e584]
+            - generic: Currently unavailable
+          - generic [ref=e590]: Add to Compare
+          - img [ref=e593]
+        - generic [ref=e595]:
+          - generic [ref=e596]:
+            - generic [ref=e597]: Apple iPhone 14 Pro Max (Deep Purple, 256 GB)
+            - generic [ref=e598]:
+              - generic [ref=e600]:
+                - text: "4.6"
+                - img [ref=e601]
+              - generic [ref=e603]: 2,409 Ratings & 165 Reviews
+            - list [ref=e605]:
+              - listitem [ref=e606]: • 256 GB ROM
+              - listitem [ref=e607]: • 17.02 cm (6.7 inch) Super Retina XDR Display
+              - listitem [ref=e608]: • 48MP + 12MP + 12MP | 12MP Front Camera
+              - listitem [ref=e609]: • A16 Bionic Chip, 6 Core Processor Processor
+              - listitem [ref=e610]: • 1 year warranty for phone and 1 year warranty for in Box Accessories.
+          - generic [ref=e611]:
+            - generic [ref=e614]: ₹1,44,900
+            - img [ref=e616]
+            - generic [ref=e618]:
+              - generic [ref=e619]: Upto
+              - generic [ref=e620]: ₹57,400
+              - generic [ref=e621]: Off on Exchange
+            - generic [ref=e624]: Bank Offer
+      - link "Apple iPhone 14 Pro Max (Deep Purple, 1 TB) Currently unavailable Add to Compare Apple iPhone 14 Pro Max (Deep Purple, 1 TB) 4.6 2,409 Ratings & 165 Reviews • 1 TB ROM • 17.02 cm (6.7 inch) Super Retina XDR Display • 48MP + 12MP + 12MP | 12MP Front Camera • A16 Bionic Chip, 6 Core Processor Processor • 1 year warranty for phone and 1 year warranty for in Box Accessories. ₹1,84,900 Upto ₹57,400 Off on Exchange Bank Offer" [ref=e629] [cursor=pointer]:
+        - /url: /apple-iphone-14-pro-max-deep-purple-1-tb/p/itm325420078c46e?pid=MOBGHWFH7STEFFVC&lid=LSTMOBGHWFH7STEFFVCHMUGC1&marketplace=FLIPKART&q=iphone+14+pro+max&store=tyy%2F4io&srno=s_1_7&otracker=search&otracker1=search&fm=organic&iid=446c9d8b-f1a5-4472-bcd7-4ec1db4998be.MOBGHWFH7STEFFVC.SEARCH&ppt=hp&ppn=homepage&ssid=arxihc0qv2jf4xz41767786961442&qH=37e37d60a349d989
+        - generic [ref=e630]:
+          - generic [ref=e631]:
+            - img "Apple iPhone 14 Pro Max (Deep Purple, 1 TB)" [ref=e634]
+            - generic: Currently unavailable
+          - generic [ref=e640]: Add to Compare
+          - img [ref=e643]
+        - generic [ref=e645]:
+          - generic [ref=e646]:
+            - generic [ref=e647]: Apple iPhone 14 Pro Max (Deep Purple, 1 TB)
+            - generic [ref=e648]:
+              - generic [ref=e650]:
+                - text: "4.6"
+                - img [ref=e651]
+              - generic [ref=e653]: 2,409 Ratings & 165 Reviews
+            - list [ref=e655]:
+              - listitem [ref=e656]: • 1 TB ROM
+              - listitem [ref=e657]: • 17.02 cm (6.7 inch) Super Retina XDR Display
+              - listitem [ref=e658]: • 48MP + 12MP + 12MP | 12MP Front Camera
+              - listitem [ref=e659]: • A16 Bionic Chip, 6 Core Processor Processor
+              - listitem [ref=e660]: • 1 year warranty for phone and 1 year warranty for in Box Accessories.
+          - generic [ref=e661]:
+            - generic [ref=e664]: ₹1,84,900
+            - img [ref=e666]
+            - generic [ref=e668]:
+              - generic [ref=e669]: Upto
+              - generic [ref=e670]: ₹57,400
+              - generic [ref=e671]: Off on Exchange
+            - generic [ref=e674]: Bank Offer
+      - link "Apple iPhone 14 Pro Max (Deep Purple, 512 GB) Currently unavailable Add to Compare Apple iPhone 14 Pro Max (Deep Purple, 512 GB) 4.6 2,409 Ratings & 165 Reviews • 512 GB ROM • 17.02 cm (6.7 inch) Super Retina XDR Display • 48MP + 12MP + 12MP | 12MP Front Camera • A16 Bionic Chip, 6 Core Processor Processor • 1 year warranty for phone and 1 year warranty for in Box Accessories. ₹1,64,900 Upto ₹57,400 Off on Exchange Bank Offer" [ref=e679] [cursor=pointer]:
+        - /url: /apple-iphone-14-pro-max-deep-purple-512-gb/p/itmf7d9a6db35ddd?pid=MOBGHWFHK5GZRHS3&lid=LSTMOBGHWFHK5GZRHS3XOKI1D&marketplace=FLIPKART&q=iphone+14+pro+max&store=tyy%2F4io&srno=s_1_8&otracker=search&otracker1=search&fm=organic&iid=446c9d8b-f1a5-4472-bcd7-4ec1db4998be.MOBGHWFHK5GZRHS3.SEARCH&ppt=hp&ppn=homepage&ssid=arxihc0qv2jf4xz41767786961442&qH=37e37d60a349d989
+        - generic [ref=e680]:
+          - generic [ref=e681]:
+            - img "Apple iPhone 14 Pro Max (Deep Purple, 512 GB)" [ref=e684]
+            - generic: Currently unavailable
+          - generic [ref=e690]: Add to Compare
+          - img [ref=e693]
+        - generic [ref=e695]:
+          - generic [ref=e696]:
+            - generic [ref=e697]: Apple iPhone 14 Pro Max (Deep Purple, 512 GB)
+            - generic [ref=e698]:
+              - generic [ref=e700]:
+                - text: "4.6"
+                - img [ref=e701]
+              - generic [ref=e703]: 2,409 Ratings & 165 Reviews
+            - list [ref=e705]:
+              - listitem [ref=e706]: • 512 GB ROM
+              - listitem [ref=e707]: • 17.02 cm (6.7 inch) Super Retina XDR Display
+              - listitem [ref=e708]: • 48MP + 12MP + 12MP | 12MP Front Camera
+              - listitem [ref=e709]: • A16 Bionic Chip, 6 Core Processor Processor
+              - listitem [ref=e710]: • 1 year warranty for phone and 1 year warranty for in Box Accessories.
+          - generic [ref=e711]:
+            - generic [ref=e714]: ₹1,64,900
+            - img [ref=e716]
+            - generic [ref=e718]:
+              - generic [ref=e719]: Upto
+              - generic [ref=e720]: ₹57,400
+              - generic [ref=e721]: Off on Exchange
+            - generic [ref=e724]: Bank Offer
+      - link "Apple iPhone 14 Pro Max (Silver, 128 GB) Currently unavailable Add to Compare Apple iPhone 14 Pro Max (Silver, 128 GB) 4.6 2,409 Ratings & 165 Reviews • 128 GB ROM • 17.02 cm (6.7 inch) Super Retina XDR Display • 48MP + 12MP + 12MP | 12MP Front Camera • A16 Bionic Chip, 6 Core Processor Processor • 1 year warranty for phone and 1 year warranty for in Box Accessories. ₹1,34,900 Upto ₹57,400 Off on Exchange Bank Offer" [ref=e729] [cursor=pointer]:
+        - /url: /apple-iphone-14-pro-max-silver-128-gb/p/itmb520f3bdf56d5?pid=MOBGHWFHXFGNUZJA&lid=LSTMOBGHWFHXFGNUZJAMNTG4B&marketplace=FLIPKART&q=iphone+14+pro+max&store=tyy%2F4io&srno=s_1_9&otracker=search&otracker1=search&fm=organic&iid=446c9d8b-f1a5-4472-bcd7-4ec1db4998be.MOBGHWFHXFGNUZJA.SEARCH&ppt=hp&ppn=homepage&ssid=arxihc0qv2jf4xz41767786961442&qH=37e37d60a349d989
+        - generic [ref=e730]:
+          - generic [ref=e731]:
+            - img "Apple iPhone 14 Pro Max (Silver, 128 GB)" [ref=e734]
+            - generic: Currently unavailable
+          - generic [ref=e740]: Add to Compare
+          - img [ref=e743]
+        - generic [ref=e745]:
+          - generic [ref=e746]:
+            - generic [ref=e747]: Apple iPhone 14 Pro Max (Silver, 128 GB)
+            - generic [ref=e748]:
+              - generic [ref=e750]:
+                - text: "4.6"
+                - img [ref=e751]
+              - generic [ref=e753]: 2,409 Ratings & 165 Reviews
+            - list [ref=e755]:
+              - listitem [ref=e756]: • 128 GB ROM
+              - listitem [ref=e757]: • 17.02 cm (6.7 inch) Super Retina XDR Display
+              - listitem [ref=e758]: • 48MP + 12MP + 12MP | 12MP Front Camera
+              - listitem [ref=e759]: • A16 Bionic Chip, 6 Core Processor Processor
+              - listitem [ref=e760]: • 1 year warranty for phone and 1 year warranty for in Box Accessories.
+          - generic [ref=e761]:
+            - generic [ref=e764]: ₹1,34,900
+            - img [ref=e766]
+            - generic [ref=e768]:
+              - generic [ref=e769]: Upto
+              - generic [ref=e770]: ₹57,400
+              - generic [ref=e771]: Off on Exchange
+            - generic [ref=e774]: Bank Offer
+      - link "Apple iPhone 14 Pro Max (Gold, 256 GB) Currently unavailable Add to Compare Apple iPhone 14 Pro Max (Gold, 256 GB) 4.6 2,409 Ratings & 165 Reviews • 256 GB ROM • 17.02 cm (6.7 inch) Super Retina XDR Display • 48MP + 12MP + 12MP | 12MP Front Camera • A16 Bionic Chip, 6 Core Processor Processor • 1 year warranty for phone and 1 year warranty for in Box Accessories. ₹1,44,900 Upto ₹57,400 Off on Exchange Bank Offer" [ref=e779] [cursor=pointer]:
+        - /url: /apple-iphone-14-pro-max-gold-256-gb/p/itmd21bfa03be8c2?pid=MOBGHWFHZVHJM4HZ&lid=LSTMOBGHWFHZVHJM4HZLWF9MT&marketplace=FLIPKART&q=iphone+14+pro+max&store=tyy%2F4io&srno=s_1_10&otracker=search&otracker1=search&fm=organic&iid=446c9d8b-f1a5-4472-bcd7-4ec1db4998be.MOBGHWFHZVHJM4HZ.SEARCH&ppt=hp&ppn=homepage&ssid=arxihc0qv2jf4xz41767786961442&qH=37e37d60a349d989
+        - generic [ref=e780]:
+          - generic [ref=e781]:
+            - img "Apple iPhone 14 Pro Max (Gold, 256 GB)" [ref=e784]
+            - generic: Currently unavailable
+          - generic [ref=e790]: Add to Compare
+          - img [ref=e793]
+        - generic [ref=e795]:
+          - generic [ref=e796]:
+            - generic [ref=e797]: Apple iPhone 14 Pro Max (Gold, 256 GB)
+            - generic [ref=e798]:
+              - generic [ref=e800]:
+                - text: "4.6"
+                - img [ref=e801]
+              - generic [ref=e803]: 2,409 Ratings & 165 Reviews
+            - list [ref=e805]:
+              - listitem [ref=e806]: • 256 GB ROM
+              - listitem [ref=e807]: • 17.02 cm (6.7 inch) Super Retina XDR Display
+              - listitem [ref=e808]: • 48MP + 12MP + 12MP | 12MP Front Camera
+              - listitem [ref=e809]: • A16 Bionic Chip, 6 Core Processor Processor
+              - listitem [ref=e810]: • 1 year warranty for phone and 1 year warranty for in Box Accessories.
+          - generic [ref=e811]:
+            - generic [ref=e814]: ₹1,44,900
+            - img [ref=e816]
+            - generic [ref=e818]:
+              - generic [ref=e819]: Upto
+              - generic [ref=e820]: ₹57,400
+              - generic [ref=e821]: Off on Exchange
+            - generic [ref=e824]: Bank Offer
+      - link "Apple iPhone 14 Pro Max (Gold, 1 TB) Currently unavailable Add to Compare Apple iPhone 14 Pro Max (Gold, 1 TB) 4.6 2,409 Ratings & 165 Reviews • 1 TB ROM • 17.02 cm (6.7 inch) Super Retina XDR Display • 48MP + 12MP + 12MP | 12MP Front Camera • A16 Bionic Chip, 6 Core Processor Processor • 1 year warranty for phone and 1 year warranty for in Box Accessories. ₹1,84,900 Upto ₹57,400 Off on Exchange Bank Offer" [ref=e829] [cursor=pointer]:
+        - /url: /apple-iphone-14-pro-max-gold-1-tb/p/itm652c9ff84d759?pid=MOBGHWFHPFG8VNXS&lid=LSTMOBGHWFHPFG8VNXSXNDZ3U&marketplace=FLIPKART&q=iphone+14+pro+max&store=tyy%2F4io&srno=s_1_11&otracker=search&otracker1=search&fm=organic&iid=446c9d8b-f1a5-4472-bcd7-4ec1db4998be.MOBGHWFHPFG8VNXS.SEARCH&ppt=hp&ppn=homepage&ssid=arxihc0qv2jf4xz41767786961442&qH=37e37d60a349d989
+        - generic [ref=e830]:
+          - generic [ref=e831]:
+            - img "Apple iPhone 14 Pro Max (Gold, 1 TB)" [ref=e834]
+            - generic: Currently unavailable
+          - generic [ref=e840]: Add to Compare
+          - img [ref=e843]
+        - generic [ref=e845]:
+          - generic [ref=e846]:
+            - generic [ref=e847]: Apple iPhone 14 Pro Max (Gold, 1 TB)
+            - generic [ref=e848]:
+              - generic [ref=e850]:
+                - text: "4.6"
+                - img [ref=e851]
+              - generic [ref=e853]: 2,409 Ratings & 165 Reviews
+            - list [ref=e855]:
+              - listitem [ref=e856]: • 1 TB ROM
+              - listitem [ref=e857]: • 17.02 cm (6.7 inch) Super Retina XDR Display
+              - listitem [ref=e858]: • 48MP + 12MP + 12MP | 12MP Front Camera
+              - listitem [ref=e859]: • A16 Bionic Chip, 6 Core Processor Processor
+              - listitem [ref=e860]: • 1 year warranty for phone and 1 year warranty for in Box Accessories.
+          - generic [ref=e861]:
+            - generic [ref=e864]: ₹1,84,900
+            - img [ref=e866]
+            - generic [ref=e868]:
+              - generic [ref=e869]: Upto
+              - generic [ref=e870]: ₹57,400
+              - generic [ref=e871]: Off on Exchange
+            - generic [ref=e874]: Bank Offer
+      - link "Apple iPhone 14 Pro Max (Gold, 128 GB) Currently unavailable Add to Compare Apple iPhone 14 Pro Max (Gold, 128 GB) 4.6 2,409 Ratings & 165 Reviews • 128 GB ROM • 17.02 cm (6.7 inch) Super Retina XDR Display • 48MP + 12MP + 12MP | 12MP Front Camera • A16 Bionic Chip, 6 Core Processor Processor • 1 year warranty for phone and 1 year warranty for in Box Accessories. ₹1,34,900 Upto ₹57,400 Off on Exchange Bank Offer" [ref=e879] [cursor=pointer]:
+        - /url: /apple-iphone-14-pro-max-gold-128-gb/p/itm898d084d8a65f?pid=MOBGHWFHGDS3H5S9&lid=LSTMOBGHWFHGDS3H5S9JO90DA&marketplace=FLIPKART&q=iphone+14+pro+max&store=tyy%2F4io&srno=s_1_12&otracker=search&otracker1=search&fm=organic&iid=446c9d8b-f1a5-4472-bcd7-4ec1db4998be.MOBGHWFHGDS3H5S9.SEARCH&ppt=hp&ppn=homepage&ssid=arxihc0qv2jf4xz41767786961442&qH=37e37d60a349d989
+        - generic [ref=e880]:
+          - generic [ref=e881]:
+            - img "Apple iPhone 14 Pro Max (Gold, 128 GB)" [ref=e884]
+            - generic: Currently unavailable
+          - generic [ref=e890]: Add to Compare
+          - img [ref=e893]
+        - generic [ref=e895]:
+          - generic [ref=e896]:
+            - generic [ref=e897]: Apple iPhone 14 Pro Max (Gold, 128 GB)
+            - generic [ref=e898]:
+              - generic [ref=e900]:
+                - text: "4.6"
+                - img [ref=e901]
+              - generic [ref=e903]: 2,409 Ratings & 165 Reviews
+            - list [ref=e905]:
+              - listitem [ref=e906]: • 128 GB ROM
+              - listitem [ref=e907]: • 17.02 cm (6.7 inch) Super Retina XDR Display
+              - listitem [ref=e908]: • 48MP + 12MP + 12MP | 12MP Front Camera
+              - listitem [ref=e909]: • A16 Bionic Chip, 6 Core Processor Processor
+              - listitem [ref=e910]: • 1 year warranty for phone and 1 year warranty for in Box Accessories.
+          - generic [ref=e911]:
+            - generic [ref=e914]: ₹1,34,900
+            - img [ref=e916]
+            - generic [ref=e918]:
+              - generic [ref=e919]: Upto
+              - generic [ref=e920]: ₹57,400
+              - generic [ref=e921]: Off on Exchange
+            - generic [ref=e924]: Bank Offer
+      - link "Apple iPhone 14 Pro Max (Silver, 256 GB) Currently unavailable Add to Compare Apple iPhone 14 Pro Max (Silver, 256 GB) 4.6 2,409 Ratings & 165 Reviews • 256 GB ROM • 17.02 cm (6.7 inch) Super Retina XDR Display • 48MP + 12MP + 12MP | 12MP Front Camera • A16 Bionic Chip, 6 Core Processor Processor • 1 year warranty for phone and 1 year warranty for in Box Accessories. ₹1,44,900 Upto ₹57,400 Off on Exchange Bank Offer" [ref=e929] [cursor=pointer]:
+        - /url: /apple-iphone-14-pro-max-silver-256-gb/p/itm111e35f4e1caa?pid=MOBGHWFHBERP6PNS&lid=LSTMOBGHWFHBERP6PNSLVMTQZ&marketplace=FLIPKART&q=iphone+14+pro+max&store=tyy%2F4io&srno=s_1_13&otracker=search&otracker1=search&fm=organic&iid=446c9d8b-f1a5-4472-bcd7-4ec1db4998be.MOBGHWFHBERP6PNS.SEARCH&ppt=hp&ppn=homepage&ssid=arxihc0qv2jf4xz41767786961442&qH=37e37d60a349d989
+        - generic [ref=e930]:
+          - generic [ref=e931]:
+            - img "Apple iPhone 14 Pro Max (Silver, 256 GB)" [ref=e934]
+            - generic: Currently unavailable
+          - generic [ref=e940]: Add to Compare
+          - img [ref=e943]
+        - generic [ref=e945]:
+          - generic [ref=e946]:
+            - generic [ref=e947]: Apple iPhone 14 Pro Max (Silver, 256 GB)
+            - generic [ref=e948]:
+              - generic [ref=e950]:
+                - text: "4.6"
+                - img [ref=e951]
+              - generic [ref=e953]: 2,409 Ratings & 165 Reviews
+            - list [ref=e955]:
+              - listitem [ref=e956]: • 256 GB ROM
+              - listitem [ref=e957]: • 17.02 cm (6.7 inch) Super Retina XDR Display
+              - listitem [ref=e958]: • 48MP + 12MP + 12MP | 12MP Front Camera
+              - listitem [ref=e959]: • A16 Bionic Chip, 6 Core Processor Processor
+              - listitem [ref=e960]: • 1 year warranty for phone and 1 year warranty for in Box Accessories.
+          - generic [ref=e961]:
+            - generic [ref=e964]: ₹1,44,900
+            - img [ref=e966]
+            - generic [ref=e968]:
+              - generic [ref=e969]: Upto
+              - generic [ref=e970]: ₹57,400
+              - generic [ref=e971]: Off on Exchange
+            - generic [ref=e974]: Bank Offer
+      - link "Apple iPhone 14 Pro Max (Deep Purple, 128 GB) Currently unavailable Add to Compare Apple iPhone 14 Pro Max (Deep Purple, 128 GB) 4.6 2,409 Ratings & 165 Reviews • 128 GB ROM • 17.02 cm (6.7 inch) Super Retina XDR Display • 48MP + 12MP + 12MP | 12MP Front Camera • A16 Bionic Chip, 6 Core Processor Processor • 1 year warranty for phone and 1 year warranty for in Box Accessories. ₹1,34,900 Upto ₹57,400 Off on Exchange Bank Offer" [ref=e979] [cursor=pointer]:
+        - /url: /apple-iphone-14-pro-max-deep-purple-128-gb/p/itm5256789ae40c7?pid=MOBGHWFHCWHXRZZJ&lid=LSTMOBGHWFHCWHXRZZJNGJFTD&marketplace=FLIPKART&q=iphone+14+pro+max&store=tyy%2F4io&srno=s_1_14&otracker=search&otracker1=search&fm=organic&iid=446c9d8b-f1a5-4472-bcd7-4ec1db4998be.MOBGHWFHCWHXRZZJ.SEARCH&ppt=hp&ppn=homepage&ssid=arxihc0qv2jf4xz41767786961442&qH=37e37d60a349d989
+        - generic [ref=e980]:
+          - generic [ref=e981]:
+            - img "Apple iPhone 14 Pro Max (Deep Purple, 128 GB)" [ref=e984]
+            - generic: Currently unavailable
+          - generic [ref=e990]: Add to Compare
+          - img [ref=e993]
+        - generic [ref=e995]:
+          - generic [ref=e996]:
+            - generic [ref=e997]: Apple iPhone 14 Pro Max (Deep Purple, 128 GB)
+            - generic [ref=e998]:
+              - generic [ref=e1000]:
+                - text: "4.6"
+                - img [ref=e1001]
+              - generic [ref=e1003]: 2,409 Ratings & 165 Reviews
+            - list [ref=e1005]:
+              - listitem [ref=e1006]: • 128 GB ROM
+              - listitem [ref=e1007]: • 17.02 cm (6.7 inch) Super Retina XDR Display
+              - listitem [ref=e1008]: • 48MP + 12MP + 12MP | 12MP Front Camera
+              - listitem [ref=e1009]: • A16 Bionic Chip, 6 Core Processor Processor
+              - listitem [ref=e1010]: • 1 year warranty for phone and 1 year warranty for in Box Accessories.
+          - generic [ref=e1011]:
+            - generic [ref=e1014]: ₹1,34,900
+            - img [ref=e1016]
+            - generic [ref=e1018]:
+              - generic [ref=e1019]: Upto
+              - generic [ref=e1020]: ₹57,400
+              - generic [ref=e1021]: Off on Exchange
+            - generic [ref=e1024]: Bank Offer
+      - link "Apple iPhone 14 Pro Max (Silver, 1 TB) Currently unavailable Add to Compare Apple iPhone 14 Pro Max (Silver, 1 TB) 4.6 2,409 Ratings & 165 Reviews • 1 TB ROM • 17.02 cm (6.7 inch) Super Retina XDR Display • 48MP + 12MP + 12MP | 12MP Front Camera • A16 Bionic Chip, 6 Core Processor Processor • 1 year warranty for phone and 1 year warranty for in Box Accessories. ₹1,84,900 Upto ₹57,400 Off on Exchange Bank Offer" [ref=e1029] [cursor=pointer]:
+        - /url: /apple-iphone-14-pro-max-silver-1-tb/p/itm674918cf10f1d?pid=MOBGHWFHHURZWVKE&lid=LSTMOBGHWFHHURZWVKEHJCEFO&marketplace=FLIPKART&q=iphone+14+pro+max&store=tyy%2F4io&srno=s_1_15&otracker=search&otracker1=search&fm=organic&iid=446c9d8b-f1a5-4472-bcd7-4ec1db4998be.MOBGHWFHHURZWVKE.SEARCH&ppt=hp&ppn=homepage&ssid=arxihc0qv2jf4xz41767786961442&qH=37e37d60a349d989
+        - generic [ref=e1030]:
+          - generic [ref=e1031]:
+            - img "Apple iPhone 14 Pro Max (Silver, 1 TB)" [ref=e1034]
+            - generic: Currently unavailable
+          - generic [ref=e1040]: Add to Compare
+          - img [ref=e1043]
+        - generic [ref=e1045]:
+          - generic [ref=e1046]:
+            - generic [ref=e1047]: Apple iPhone 14 Pro Max (Silver, 1 TB)
+            - generic [ref=e1048]:
+              - generic [ref=e1050]:
+                - text: "4.6"
+                - img [ref=e1051]
+              - generic [ref=e1053]: 2,409 Ratings & 165 Reviews
+            - list [ref=e1055]:
+              - listitem [ref=e1056]: • 1 TB ROM
+              - listitem [ref=e1057]: • 17.02 cm (6.7 inch) Super Retina XDR Display
+              - listitem [ref=e1058]: • 48MP + 12MP + 12MP | 12MP Front Camera
+              - listitem [ref=e1059]: • A16 Bionic Chip, 6 Core Processor Processor
+              - listitem [ref=e1060]: • 1 year warranty for phone and 1 year warranty for in Box Accessories.
+          - generic [ref=e1061]:
+            - generic [ref=e1064]: ₹1,84,900
+            - img [ref=e1066]
+            - generic [ref=e1068]:
+              - generic [ref=e1069]: Upto
+              - generic [ref=e1070]: ₹57,400
+              - generic [ref=e1071]: Off on Exchange
+            - generic [ref=e1074]: Bank Offer
+      - link "Apple iPhone 14 Pro Max (Space Black, 1 TB) Currently unavailable Add to Compare Apple iPhone 14 Pro Max (Space Black, 1 TB) 4.6 2,409 Ratings & 165 Reviews • 1 TB ROM • 17.02 cm (6.7 inch) Super Retina XDR Display • 48MP + 12MP + 12MP | 12MP Front Camera • A16 Bionic Chip, 6 Core Processor Processor • 1 year warranty for phone and 1 year warranty for in Box Accessories. ₹1,84,900 Upto ₹57,400 Off on Exchange Bank Offer" [ref=e1079] [cursor=pointer]:
+        - /url: /apple-iphone-14-pro-max-space-black-1-tb/p/itm60b62b9408788?pid=MOBGHWFHSHH7UP2Y&lid=LSTMOBGHWFHSHH7UP2YWJRSNX&marketplace=FLIPKART&q=iphone+14+pro+max&store=tyy%2F4io&srno=s_1_16&otracker=search&otracker1=search&fm=organic&iid=446c9d8b-f1a5-4472-bcd7-4ec1db4998be.MOBGHWFHSHH7UP2Y.SEARCH&ppt=hp&ppn=homepage&ssid=arxihc0qv2jf4xz41767786961442&qH=37e37d60a349d989
+        - generic [ref=e1080]:
+          - generic [ref=e1081]:
+            - img "Apple iPhone 14 Pro Max (Space Black, 1 TB)" [ref=e1084]
+            - generic: Currently unavailable
+          - generic [ref=e1090]: Add to Compare
+          - img [ref=e1093]
+        - generic [ref=e1095]:
+          - generic [ref=e1096]:
+            - generic [ref=e1097]: Apple iPhone 14 Pro Max (Space Black, 1 TB)
+            - generic [ref=e1098]:
+              - generic [ref=e1100]:
+                - text: "4.6"
+                - img [ref=e1101]
+              - generic [ref=e1103]: 2,409 Ratings & 165 Reviews
+            - list [ref=e1105]:
+              - listitem [ref=e1106]: • 1 TB ROM
+              - listitem [ref=e1107]: • 17.02 cm (6.7 inch) Super Retina XDR Display
+              - listitem [ref=e1108]: • 48MP + 12MP + 12MP | 12MP Front Camera
+              - listitem [ref=e1109]: • A16 Bionic Chip, 6 Core Processor Processor
+              - listitem [ref=e1110]: • 1 year warranty for phone and 1 year warranty for in Box Accessories.
+          - generic [ref=e1111]:
+            - generic [ref=e1114]: ₹1,84,900
+            - img [ref=e1116]
+            - generic [ref=e1118]:
+              - generic [ref=e1119]: Upto
+              - generic [ref=e1120]: ₹57,400
+              - generic [ref=e1121]: Off on Exchange
+            - generic [ref=e1124]: Bank Offer
+      - link "Apple iPhone 12 Pro Max (Gold, 128 GB) Currently unavailable Add to Compare Apple iPhone 12 Pro Max (Gold, 128 GB) 4.5 1,276 Ratings & 100 Reviews • 128 GB ROM • 17.02 cm (6.7 inch) Super Retina XDR Display • 12MP + 12MP + 12MP | 12MP Front Camera • A14 Bionic Chip with Next Generation Neural Engine Processor • Ceramic Shield | Industry-leading IP68 Water Resistance • All Screen OLED Display • LiDAR Scanner for Improved AR Experiences, Night Mode Portraits • 1 year warranty for phone and 1 year warranty for in Box Accessories. ₹1,19,900 Bank Offer" [ref=e1129] [cursor=pointer]:
+        - /url: /apple-iphone-12-pro-max-gold-128-gb/p/itme3ae592065711?pid=MOBFWBYZQVKT77YH&lid=LSTMOBFWBYZQVKT77YHP1ERRT&marketplace=FLIPKART&q=iphone+14+pro+max&store=tyy%2F4io&srno=s_1_17&otracker=search&otracker1=search&fm=organic&iid=446c9d8b-f1a5-4472-bcd7-4ec1db4998be.MOBFWBYZQVKT77YH.SEARCH&ppt=hp&ppn=homepage&ssid=arxihc0qv2jf4xz41767786961442&qH=37e37d60a349d989
+        - generic [ref=e1130]:
+          - generic [ref=e1131]:
+            - img "Apple iPhone 12 Pro Max (Gold, 128 GB)" [ref=e1134]
+            - generic: Currently unavailable
+          - generic [ref=e1140]: Add to Compare
+          - img [ref=e1143]
+        - generic [ref=e1145]:
+          - generic [ref=e1146]:
+            - generic [ref=e1147]: Apple iPhone 12 Pro Max (Gold, 128 GB)
+            - generic [ref=e1148]:
+              - generic [ref=e1150]:
+                - text: "4.5"
+                - img [ref=e1151]
+              - generic [ref=e1153]: 1,276 Ratings & 100 Reviews
+            - list [ref=e1155]:
+              - listitem [ref=e1156]: • 128 GB ROM
+              - listitem [ref=e1157]: • 17.02 cm (6.7 inch) Super Retina XDR Display
+              - listitem [ref=e1158]: • 12MP + 12MP + 12MP | 12MP Front Camera
+              - listitem [ref=e1159]: • A14 Bionic Chip with Next Generation Neural Engine Processor
+              - listitem [ref=e1160]: • Ceramic Shield | Industry-leading IP68 Water Resistance
+              - listitem [ref=e1161]: • All Screen OLED Display
+              - listitem [ref=e1162]: • LiDAR Scanner for Improved AR Experiences, Night Mode Portraits
+              - listitem [ref=e1163]: • 1 year warranty for phone and 1 year warranty for in Box Accessories.
+          - generic [ref=e1164]:
+            - generic [ref=e1167]: ₹1,19,900
+            - img [ref=e1169]
+            - generic [ref=e1172]: Bank Offer
+      - link "Apple iPhone 12 Pro Max (Silver, 256 GB) Currently unavailable Add to Compare Apple iPhone 12 Pro Max (Silver, 256 GB) 4.5 1,276 Ratings & 100 Reviews • 256 GB ROM • 17.02 cm (6.7 inch) Super Retina XDR Display • 12MP + 12MP + 12MP | 12MP Front Camera • A14 Bionic Chip with Next Generation Neural Engine Processor • Ceramic Shield | Industry-leading IP68 Water Resistance • All Screen OLED Display • LiDAR Scanner for Improved AR Experiences, Night Mode Portraits • Brand Warranty for 1 Year ₹1,29,900 Bank Offer" [ref=e1177] [cursor=pointer]:
+        - /url: /apple-iphone-12-pro-max-silver-256-gb/p/itm30faf74442adb?pid=MOBFWBYZZH4AM8FE&lid=LSTMOBFWBYZZH4AM8FETYFBOG&marketplace=FLIPKART&q=iphone+14+pro+max&store=tyy%2F4io&srno=s_1_18&otracker=search&otracker1=search&fm=organic&iid=446c9d8b-f1a5-4472-bcd7-4ec1db4998be.MOBFWBYZZH4AM8FE.SEARCH&ppt=hp&ppn=homepage&ssid=arxihc0qv2jf4xz41767786961442&qH=37e37d60a349d989
+        - generic [ref=e1178]:
+          - generic [ref=e1179]:
+            - img "Apple iPhone 12 Pro Max (Silver, 256 GB)" [ref=e1182]
+            - generic: Currently unavailable
+          - generic [ref=e1188]: Add to Compare
+          - img [ref=e1191]
+        - generic [ref=e1193]:
+          - generic [ref=e1194]:
+            - generic [ref=e1195]: Apple iPhone 12 Pro Max (Silver, 256 GB)
+            - generic [ref=e1196]:
+              - generic [ref=e1198]:
+                - text: "4.5"
+                - img [ref=e1199]
+              - generic [ref=e1201]: 1,276 Ratings & 100 Reviews
+            - list [ref=e1203]:
+              - listitem [ref=e1204]: • 256 GB ROM
+              - listitem [ref=e1205]: • 17.02 cm (6.7 inch) Super Retina XDR Display
+              - listitem [ref=e1206]: • 12MP + 12MP + 12MP | 12MP Front Camera
+              - listitem [ref=e1207]: • A14 Bionic Chip with Next Generation Neural Engine Processor
+              - listitem [ref=e1208]: • Ceramic Shield | Industry-leading IP68 Water Resistance
+              - listitem [ref=e1209]: • All Screen OLED Display
+              - listitem [ref=e1210]: • LiDAR Scanner for Improved AR Experiences, Night Mode Portraits
+              - listitem [ref=e1211]: • Brand Warranty for 1 Year
+          - generic [ref=e1212]:
+            - generic [ref=e1215]: ₹1,29,900
+            - img [ref=e1217]
+            - generic [ref=e1220]: Bank Offer
+      - link "Apple iPhone 12 Pro Max (Pacific Blue, 256 GB) Currently unavailable Add to Compare Apple iPhone 12 Pro Max (Pacific Blue, 256 GB) 4.5 1,276 Ratings & 100 Reviews • 256 GB ROM • 17.02 cm (6.7 inch) Super Retina XDR Display • 12MP + 12MP + 12MP | 12MP Front Camera • A14 Bionic Chip with Next Generation Neural Engine Processor • Ceramic Shield | Industry-leading IP68 Water Resistance • All Screen OLED Display • LiDAR Scanner for Improved AR Experiences, Night Mode Portraits • 1 year warranty for phone and 1 year warranty for in Box Accessories. ₹1,29,900 Bank Offer" [ref=e1225] [cursor=pointer]:
+        - /url: /apple-iphone-12-pro-max-pacific-blue-256-gb/p/itm3a0860c94250e?pid=MOBFWBYZ8STJXCVT&lid=LSTMOBFWBYZ8STJXCVTQTZADP&marketplace=FLIPKART&q=iphone+14+pro+max&store=tyy%2F4io&srno=s_1_19&otracker=search&otracker1=search&fm=organic&iid=446c9d8b-f1a5-4472-bcd7-4ec1db4998be.MOBFWBYZ8STJXCVT.SEARCH&ppt=hp&ppn=homepage&ssid=arxihc0qv2jf4xz41767786961442&qH=37e37d60a349d989
+        - generic [ref=e1226]:
+          - generic [ref=e1227]:
+            - img "Apple iPhone 12 Pro Max (Pacific Blue, 256 GB)" [ref=e1230]
+            - generic: Currently unavailable
+          - generic [ref=e1236]: Add to Compare
+          - img [ref=e1239]
+        - generic [ref=e1241]:
+          - generic [ref=e1242]:
+            - generic [ref=e1243]: Apple iPhone 12 Pro Max (Pacific Blue, 256 GB)
+            - generic [ref=e1244]:
+              - generic [ref=e1246]:
+                - text: "4.5"
+                - img [ref=e1247]
+              - generic [ref=e1249]: 1,276 Ratings & 100 Reviews
+            - list [ref=e1251]:
+              - listitem [ref=e1252]: • 256 GB ROM
+              - listitem [ref=e1253]: • 17.02 cm (6.7 inch) Super Retina XDR Display
+              - listitem [ref=e1254]: • 12MP + 12MP + 12MP | 12MP Front Camera
+              - listitem [ref=e1255]: • A14 Bionic Chip with Next Generation Neural Engine Processor
+              - listitem [ref=e1256]: • Ceramic Shield | Industry-leading IP68 Water Resistance
+              - listitem [ref=e1257]: • All Screen OLED Display
+              - listitem [ref=e1258]: • LiDAR Scanner for Improved AR Experiences, Night Mode Portraits
+              - listitem [ref=e1259]: • 1 year warranty for phone and 1 year warranty for in Box Accessories.
+          - generic [ref=e1260]:
+            - generic [ref=e1263]: ₹1,29,900
+            - img [ref=e1265]
+            - generic [ref=e1268]: Bank Offer
+      - link "Apple iPhone 12 Pro Max (Graphite, 512 GB) Currently unavailable Add to Compare Apple iPhone 12 Pro Max (Graphite, 512 GB) 4.5 1,276 Ratings & 100 Reviews • 512 GB ROM • 17.02 cm (6.7 inch) Super Retina XDR Display • 12MP + 12MP + 12MP | 12MP Front Camera • A14 Bionic Chip with Next Generation Neural Engine Processor • Ceramic Shield | Industry-leading IP68 Water Resistance • All Screen OLED Display • LiDAR Scanner for Improved AR Experiences, Night Mode Portraits • 1 year warranty for phone and 1 year warranty for in Box Accessories. ₹1,49,900 Bank Offer" [ref=e1273] [cursor=pointer]:
+        - /url: /apple-iphone-12-pro-max-graphite-512-gb/p/itm52a5e8e630441?pid=MOBFWBYZZZ6DWWFZ&lid=LSTMOBFWBYZZZ6DWWFZJWJVPK&marketplace=FLIPKART&q=iphone+14+pro+max&store=tyy%2F4io&srno=s_1_20&otracker=search&otracker1=search&fm=organic&iid=446c9d8b-f1a5-4472-bcd7-4ec1db4998be.MOBFWBYZZZ6DWWFZ.SEARCH&ppt=hp&ppn=homepage&ssid=arxihc0qv2jf4xz41767786961442&qH=37e37d60a349d989
+        - generic [ref=e1274]:
+          - generic [ref=e1275]:
+            - img "Apple iPhone 12 Pro Max (Graphite, 512 GB)" [ref=e1278]
+            - generic: Currently unavailable
+          - generic [ref=e1284]: Add to Compare
+          - img [ref=e1287]
+        - generic [ref=e1289]:
+          - generic [ref=e1290]:
+            - generic [ref=e1291]: Apple iPhone 12 Pro Max (Graphite, 512 GB)
+            - generic [ref=e1292]:
+              - generic [ref=e1294]:
+                - text: "4.5"
+                - img [ref=e1295]
+              - generic [ref=e1297]: 1,276 Ratings & 100 Reviews
+            - list [ref=e1299]:
+              - listitem [ref=e1300]: • 512 GB ROM
+              - listitem [ref=e1301]: • 17.02 cm (6.7 inch) Super Retina XDR Display
+              - listitem [ref=e1302]: • 12MP + 12MP + 12MP | 12MP Front Camera
+              - listitem [ref=e1303]: • A14 Bionic Chip with Next Generation Neural Engine Processor
+              - listitem [ref=e1304]: • Ceramic Shield | Industry-leading IP68 Water Resistance
+              - listitem [ref=e1305]: • All Screen OLED Display
+              - listitem [ref=e1306]: • LiDAR Scanner for Improved AR Experiences, Night Mode Portraits
+              - listitem [ref=e1307]: • 1 year warranty for phone and 1 year warranty for in Box Accessories.
+          - generic [ref=e1308]:
+            - generic [ref=e1311]: ₹1,49,900
+            - img [ref=e1313]
+            - generic [ref=e1316]: Bank Offer
+      - link "Apple iPhone 12 Pro Max (Silver, 128 GB) Currently unavailable Add to Compare Apple iPhone 12 Pro Max (Silver, 128 GB) 4.5 1,276 Ratings & 100 Reviews • 128 GB ROM • 17.02 cm (6.7 inch) Super Retina XDR Display • 12MP + 12MP + 12MP | 12MP Front Camera • A14 Bionic Chip with Next Generation Neural Engine Processor • Ceramic Shield | Industry-leading IP68 Water Resistance • All Screen OLED Display • LiDAR Scanner for Improved AR Experiences, Night Mode Portraits • 1 year warranty for phone and 1 year warranty for in Box Accessories. ₹1,19,900 Bank Offer" [ref=e1321] [cursor=pointer]:
+        - /url: /apple-iphone-12-pro-max-silver-128-gb/p/itm5a51ba742a17e?pid=MOBFWBYZNSNVGGZC&lid=LSTMOBFWBYZNSNVGGZCTPGZZU&marketplace=FLIPKART&q=iphone+14+pro+max&store=tyy%2F4io&srno=s_1_21&otracker=search&otracker1=search&fm=organic&iid=446c9d8b-f1a5-4472-bcd7-4ec1db4998be.MOBFWBYZNSNVGGZC.SEARCH&ppt=hp&ppn=homepage&ssid=arxihc0qv2jf4xz41767786961442&qH=37e37d60a349d989
+        - generic [ref=e1322]:
+          - generic [ref=e1323]:
+            - img "Apple iPhone 12 Pro Max (Silver, 128 GB)" [ref=e1326]
+            - generic: Currently unavailable
+          - generic [ref=e1332]: Add to Compare
+          - img [ref=e1335]
+        - generic [ref=e1337]:
+          - generic [ref=e1338]:
+            - generic [ref=e1339]: Apple iPhone 12 Pro Max (Silver, 128 GB)
+            - generic [ref=e1340]:
+              - generic [ref=e1342]:
+                - text: "4.5"
+                - img [ref=e1343]
+              - generic [ref=e1345]: 1,276 Ratings & 100 Reviews
+            - list [ref=e1347]:
+              - listitem [ref=e1348]: • 128 GB ROM
+              - listitem [ref=e1349]: • 17.02 cm (6.7 inch) Super Retina XDR Display
+              - listitem [ref=e1350]: • 12MP + 12MP + 12MP | 12MP Front Camera
+              - listitem [ref=e1351]: • A14 Bionic Chip with Next Generation Neural Engine Processor
+              - listitem [ref=e1352]: • Ceramic Shield | Industry-leading IP68 Water Resistance
+              - listitem [ref=e1353]: • All Screen OLED Display
+              - listitem [ref=e1354]: • LiDAR Scanner for Improved AR Experiences, Night Mode Portraits
+              - listitem [ref=e1355]: • 1 year warranty for phone and 1 year warranty for in Box Accessories.
+          - generic [ref=e1356]:
+            - generic [ref=e1359]: ₹1,19,900
+            - img [ref=e1361]
+            - generic [ref=e1364]: Bank Offer
+      - link "Apple iPhone 12 Pro Max (Gold, 512 GB) Currently unavailable Add to Compare Apple iPhone 12 Pro Max (Gold, 512 GB) 4.5 1,276 Ratings & 100 Reviews • 512 GB ROM • 17.02 cm (6.7 inch) Super Retina XDR Display • 12MP + 12MP + 12MP | 12MP Front Camera • A14 Bionic Chip with Next Generation Neural Engine Processor • Ceramic Shield | Industry-leading IP68 Water Resistance • All Screen OLED Display • LiDAR Scanner for Improved AR Experiences, Night Mode Portraits • 1 year warranty for phone and 1 year warranty for in Box Accessories. ₹1,49,900 Bank Offer" [ref=e1369] [cursor=pointer]:
+        - /url: /apple-iphone-12-pro-max-gold-512-gb/p/itmd164e2fef2871?pid=MOBFWBYZ4AG3FGNW&lid=LSTMOBFWBYZ4AG3FGNWL6UEHL&marketplace=FLIPKART&q=iphone+14+pro+max&store=tyy%2F4io&srno=s_1_22&otracker=search&otracker1=search&fm=organic&iid=446c9d8b-f1a5-4472-bcd7-4ec1db4998be.MOBFWBYZ4AG3FGNW.SEARCH&ppt=hp&ppn=homepage&ssid=arxihc0qv2jf4xz41767786961442&qH=37e37d60a349d989
+        - generic [ref=e1370]:
+          - generic [ref=e1371]:
+            - img "Apple iPhone 12 Pro Max (Gold, 512 GB)" [ref=e1374]
+            - generic: Currently unavailable
+          - generic [ref=e1380]: Add to Compare
+          - img [ref=e1383]
+        - generic [ref=e1385]:
+          - generic [ref=e1386]:
+            - generic [ref=e1387]: Apple iPhone 12 Pro Max (Gold, 512 GB)
+            - generic [ref=e1388]:
+              - generic [ref=e1390]:
+                - text: "4.5"
+                - img [ref=e1391]
+              - generic [ref=e1393]: 1,276 Ratings & 100 Reviews
+            - list [ref=e1395]:
+              - listitem [ref=e1396]: • 512 GB ROM
+              - listitem [ref=e1397]: • 17.02 cm (6.7 inch) Super Retina XDR Display
+              - listitem [ref=e1398]: • 12MP + 12MP + 12MP | 12MP Front Camera
+              - listitem [ref=e1399]: • A14 Bionic Chip with Next Generation Neural Engine Processor
+              - listitem [ref=e1400]: • Ceramic Shield | Industry-leading IP68 Water Resistance
+              - listitem [ref=e1401]: • All Screen OLED Display
+              - listitem [ref=e1402]: • LiDAR Scanner for Improved AR Experiences, Night Mode Portraits
+              - listitem [ref=e1403]: • 1 year warranty for phone and 1 year warranty for in Box Accessories.
+          - generic [ref=e1404]:
+            - generic [ref=e1407]: ₹1,49,900
+            - img [ref=e1409]
+            - generic [ref=e1412]: Bank Offer
+      - link "Apple iPhone 12 Pro Max (Silver, 512 GB) Currently unavailable Add to Compare Apple iPhone 12 Pro Max (Silver, 512 GB) 4.5 1,276 Ratings & 100 Reviews • 512 GB ROM • 17.02 cm (6.7 inch) Super Retina XDR Display • 12MP + 12MP + 12MP | 12MP Front Camera • A14 Bionic Chip with Next Generation Neural Engine Processor • Ceramic Shield | Industry-leading IP68 Water Resistance • All Screen OLED Display • LiDAR Scanner for Improved AR Experiences, Night Mode Portraits • 1 year warranty for phone and 1 year warranty for in Box Accessories. ₹1,49,900 Bank Offer" [ref=e1417] [cursor=pointer]:
+        - /url: /apple-iphone-12-pro-max-silver-512-gb/p/itm5d3d37892544f?pid=MOBFWBYZW38NGPNM&lid=LSTMOBFWBYZW38NGPNMW4SVPI&marketplace=FLIPKART&q=iphone+14+pro+max&store=tyy%2F4io&srno=s_1_23&otracker=search&otracker1=search&fm=organic&iid=446c9d8b-f1a5-4472-bcd7-4ec1db4998be.MOBFWBYZW38NGPNM.SEARCH&ppt=hp&ppn=homepage&ssid=arxihc0qv2jf4xz41767786961442&qH=37e37d60a349d989
+        - generic [ref=e1418]:
+          - generic [ref=e1419]:
+            - img "Apple iPhone 12 Pro Max (Silver, 512 GB)" [ref=e1422]
+            - generic: Currently unavailable
+          - generic [ref=e1428]: Add to Compare
+          - img [ref=e1431]
+        - generic [ref=e1433]:
+          - generic [ref=e1434]:
+            - generic [ref=e1435]: Apple iPhone 12 Pro Max (Silver, 512 GB)
+            - generic [ref=e1436]:
+              - generic [ref=e1438]:
+                - text: "4.5"
+                - img [ref=e1439]
+              - generic [ref=e1441]: 1,276 Ratings & 100 Reviews
+            - list [ref=e1443]:
+              - listitem [ref=e1444]: • 512 GB ROM
+              - listitem [ref=e1445]: • 17.02 cm (6.7 inch) Super Retina XDR Display
+              - listitem [ref=e1446]: • 12MP + 12MP + 12MP | 12MP Front Camera
+              - listitem [ref=e1447]: • A14 Bionic Chip with Next Generation Neural Engine Processor
+              - listitem [ref=e1448]: • Ceramic Shield | Industry-leading IP68 Water Resistance
+              - listitem [ref=e1449]: • All Screen OLED Display
+              - listitem [ref=e1450]: • LiDAR Scanner for Improved AR Experiences, Night Mode Portraits
+              - listitem [ref=e1451]: • 1 year warranty for phone and 1 year warranty for in Box Accessories.
+          - generic [ref=e1452]:
+            - generic [ref=e1455]: ₹1,49,900
+            - img [ref=e1457]
+            - generic [ref=e1460]: Bank Offer
+      - link "Apple iPhone 12 Pro Max (Gold, 256 GB) Currently unavailable Add to Compare Apple iPhone 12 Pro Max (Gold, 256 GB) 4.5 1,276 Ratings & 100 Reviews • 256 GB ROM • 17.02 cm (6.7 inch) Super Retina XDR Display • 12MP + 12MP + 12MP | 12MP Front Camera • A14 Bionic Chip with Next Generation Neural Engine Processor • Ceramic Shield | Industry-leading IP68 Water Resistance • All Screen OLED Display • LiDAR Scanner for Improved AR Experiences, Night Mode Portraits • 1 year warranty for phone and 1 year warranty for in Box Accessories. ₹1,29,900 Bank Offer" [ref=e1465] [cursor=pointer]:
+        - /url: /apple-iphone-12-pro-max-gold-256-gb/p/itm1e0354f5bbc8c?pid=MOBFWBYZZPW8JHQF&lid=LSTMOBFWBYZZPW8JHQFVJR3PO&marketplace=FLIPKART&q=iphone+14+pro+max&store=tyy%2F4io&srno=s_1_24&otracker=search&otracker1=search&fm=organic&iid=446c9d8b-f1a5-4472-bcd7-4ec1db4998be.MOBFWBYZZPW8JHQF.SEARCH&ppt=hp&ppn=homepage&ssid=arxihc0qv2jf4xz41767786961442&qH=37e37d60a349d989
+        - generic [ref=e1466]:
+          - generic [ref=e1467]:
+            - img "Apple iPhone 12 Pro Max (Gold, 256 GB)" [ref=e1470]
+            - generic: Currently unavailable
+          - generic [ref=e1476]: Add to Compare
+          - img [ref=e1479]
+        - generic [ref=e1481]:
+          - generic [ref=e1482]:
+            - generic [ref=e1483]: Apple iPhone 12 Pro Max (Gold, 256 GB)
+            - generic [ref=e1484]:
+              - generic [ref=e1486]:
+                - text: "4.5"
+                - img [ref=e1487]
+              - generic [ref=e1489]: 1,276 Ratings & 100 Reviews
+            - list [ref=e1491]:
+              - listitem [ref=e1492]: • 256 GB ROM
+              - listitem [ref=e1493]: • 17.02 cm (6.7 inch) Super Retina XDR Display
+              - listitem [ref=e1494]: • 12MP + 12MP + 12MP | 12MP Front Camera
+              - listitem [ref=e1495]: • A14 Bionic Chip with Next Generation Neural Engine Processor
+              - listitem [ref=e1496]: • Ceramic Shield | Industry-leading IP68 Water Resistance
+              - listitem [ref=e1497]: • All Screen OLED Display
+              - listitem [ref=e1498]: • LiDAR Scanner for Improved AR Experiences, Night Mode Portraits
+              - listitem [ref=e1499]: • 1 year warranty for phone and 1 year warranty for in Box Accessories.
+          - generic [ref=e1500]:
+            - generic [ref=e1503]: ₹1,29,900
+            - img [ref=e1505]
+            - generic [ref=e1508]: Bank Offer
+      - generic [ref=e1511]:
+        - generic [ref=e1512]: Page 1 of 2
+        - navigation [ref=e1513]:
+          - link "1" [ref=e1514] [cursor=pointer]:
+            - /url: /search?q=iphone+14+pro+max&otracker=search&otracker1=search&marketplace=FLIPKART&as-show=off&as=off&page=1
+          - link "2" [ref=e1515] [cursor=pointer]:
+            - /url: /search?q=iphone+14+pro+max&otracker=search&otracker1=search&marketplace=FLIPKART&as-show=off&as=off&page=2
+          - link "Next" [ref=e1516] [cursor=pointer]:
+            - /url: /search?q=iphone+14+pro+max&otracker=search&otracker1=search&marketplace=FLIPKART&as-show=off&as=off&page=2
+      - generic [ref=e1518]:
+        - text: Did you find what you were looking for?
+        - generic [ref=e1519]:
+          - generic [ref=e1520] [cursor=pointer]: "Yes"
+          - generic [ref=e1521] [cursor=pointer]: "No"
+  - contentinfo [ref=e1522]:
+    - generic [ref=e1524]:
+      - generic [ref=e1525]:
+        - generic [ref=e1526]:
+          - generic [ref=e1527]: ABOUT
+          - link "Contact Us" [ref=e1528] [cursor=pointer]:
+            - /url: /helpcentre?otracker=footer_navlinks
+          - link "About Us" [ref=e1529] [cursor=pointer]:
+            - /url: https://corporate.flipkart.net/corporate-home
+          - link "Careers" [ref=e1530] [cursor=pointer]:
+            - /url: https://www.flipkartcareers.com/?otracker=footer_navlinks
+          - link "Flipkart Stories" [ref=e1531] [cursor=pointer]:
+            - /url: http://stories.flipkart.com/?otracker=footer_navlinks
+          - link "Press" [ref=e1532] [cursor=pointer]:
+            - /url: http://stories.flipkart.com/category/top-stories/news/
+          - link "Corporate Information" [ref=e1533] [cursor=pointer]:
+            - /url: /corporate-information
+        - generic [ref=e1534]:
+          - generic [ref=e1535]: GROUP COMPANIES
+          - link "Myntra" [ref=e1536] [cursor=pointer]:
+            - /url: https://www.myntra.com/
+          - link "Cleartrip" [ref=e1537] [cursor=pointer]:
+            - /url: https://www.cleartrip.com/
+          - link "Shopsy" [ref=e1538] [cursor=pointer]:
+            - /url: https://www.shopsy.in/
+        - generic [ref=e1539]:
+          - generic [ref=e1540]: HELP
+          - link "Payments" [ref=e1541] [cursor=pointer]:
+            - /url: /pages/payments
+          - link "Shipping" [ref=e1542] [cursor=pointer]:
+            - /url: /pages/shipping
+          - link "Cancellation & Returns" [ref=e1543] [cursor=pointer]:
+            - /url: /helpcentre?catalog=55c9c6edb000002e002c1701&view=CATALOG
+          - link "FAQ" [ref=e1544] [cursor=pointer]:
+            - /url: /helpcentre?catalog=55c9c8e2b0000023002c1702&view=CATALOG
+        - generic [ref=e1545]:
+          - generic [ref=e1546]: CONSUMER POLICY
+          - link "Cancellation & Returns" [ref=e1547] [cursor=pointer]:
+            - /url: /pages/returnpolicy?otracker=footer_navlinks
+          - link "Terms Of Use" [ref=e1548] [cursor=pointer]:
+            - /url: /pages/terms?otracker=footer_navlinks
+          - link "Security" [ref=e1549] [cursor=pointer]:
+            - /url: /pages/paymentsecurity?otracker=footer_navlinks
+          - link "Privacy" [ref=e1550] [cursor=pointer]:
+            - /url: /pages/privacypolicy?otracker=footer_navlinks
+          - link "Sitemap" [ref=e1551] [cursor=pointer]:
+            - /url: /sitemap?otracker=footer_navlinks
+          - link "Grievance Redressal" [ref=e1552] [cursor=pointer]:
+            - /url: /pages/grievance-redressal-mechanism?otracker=footer_navlinks
+          - link "EPR Compliance" [ref=e1553] [cursor=pointer]:
+            - /url: /pages/ewaste-compliance-tnc?otracker=footer_navlinks
+          - link "FSSAI Food Safety Connect App" [ref=e1554] [cursor=pointer]:
+            - /url: https://fssai.gov.in/cms/food-safety-connect.php
+        - generic [ref=e1556]:
+          - generic [ref=e1557]: "Mail Us:"
+          - generic [ref=e1560]:
+            - paragraph [ref=e1561]: Flipkart Internet Private Limited,
+            - paragraph [ref=e1562]: Buildings Alyssa, Begonia &
+            - paragraph [ref=e1563]: Clove Embassy Tech Village,
+            - paragraph [ref=e1564]: Outer Ring Road, Devarabeesanahalli Village,
+            - paragraph [ref=e1565]: Bengaluru, 560103,
+            - paragraph [ref=e1566]: Karnataka, India
+          - generic [ref=e1567]: Social
+          - generic [ref=e1568]:
+            - link [ref=e1570] [cursor=pointer]:
+              - /url: https://www.facebook.com/flipkart
+              - img [ref=e1571]
+            - link [ref=e1573] [cursor=pointer]:
+              - /url: https://www.twitter.com/flipkart
+              - img [ref=e1574]
+            - link [ref=e1576] [cursor=pointer]:
+              - /url: https://www.youtube.com/flipkart
+              - img [ref=e1577]
+            - link [ref=e1579] [cursor=pointer]:
+              - /url: https://www.instagram.com/flipkart
+              - img [ref=e1580]
+        - generic [ref=e1582]:
+          - generic [ref=e1583]: "Registered Office Address:"
+          - generic [ref=e1586]:
+            - paragraph [ref=e1587]: Flipkart Internet Private Limited,
+            - paragraph [ref=e1588]: Buildings Alyssa, Begonia &
+            - paragraph [ref=e1589]: Clove Embassy Tech Village,
+            - paragraph [ref=e1590]: Outer Ring Road, Devarabeesanahalli Village,
+            - paragraph [ref=e1591]: Bengaluru, 560103,
+            - paragraph [ref=e1592]: Karnataka, India
+            - paragraph [ref=e1593]: "CIN : U51109KA2012PTC066107"
+            - paragraph [ref=e1594]:
+              - text: "Telephone:"
+              - link "044-45614700" [ref=e1595] [cursor=pointer]:
+                - /url: tel:044-45614700
+              - text: /
+              - link "044-67415800" [ref=e1596] [cursor=pointer]:
+                - /url: tel:044-67415800
+      - generic [ref=e1598]:
+        - generic [ref=e1599]:
+          - img [ref=e1600]
+          - link "Become a Seller" [ref=e1601] [cursor=pointer]:
+            - /url: https://seller.flipkart.com/?utm_source=fkwebsite&utm_medium=websitedirect
+        - generic [ref=e1602]:
+          - img [ref=e1603]
+          - link "Advertise" [ref=e1604] [cursor=pointer]:
+            - /url: https://brands.flipkart.com
+        - generic [ref=e1605]:
+          - img [ref=e1606]
+          - link "Gift Cards" [ref=e1607] [cursor=pointer]:
+            - /url: /the-gift-card-store?otracker=footer_navlinks
+        - generic [ref=e1608]:
+          - img [ref=e1609]
+          - link "Help Center" [ref=e1610] [cursor=pointer]:
+            - /url: /helpcentre?otracker=footer_navlinks
+        - generic [ref=e1611]: © 2007-2025 Flipkart.com
+        - img [ref=e1612]
+```

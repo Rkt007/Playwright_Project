@@ -1,0 +1,684 @@
+# Page snapshot
+
+```yaml
+- generic [active] [ref=e1]:
+  - generic [ref=e2]:
+    - banner [ref=e3]:
+      - generic [ref=e5]:
+        - link "zingbus logo" [ref=e8] [cursor=pointer]:
+          - /url: /
+          - img "zingbus logo" [ref=e9]
+        - generic [ref=e16] [cursor=pointer]:
+          - img "User" [ref=e17]
+          - generic [ref=e18]:
+            - paragraph [ref=e19]: Signup Here
+            - paragraph [ref=e20]: "& Win Exciting Rewards"
+    - generic [ref=e21]:
+      - generic [ref=e35]:
+        - generic [ref=e36]:
+          - generic [ref=e37]:
+            - img [ref=e39]
+            - generic [ref=e40]: From
+          - textbox "From City" [ref=e43] [cursor=pointer]: New Delhi, Delhi
+          - img [ref=e45] [cursor=pointer]
+        - generic [ref=e46]:
+          - generic [ref=e47]:
+            - img [ref=e49]
+            - generic [ref=e50]: To
+          - textbox "To City" [ref=e53] [cursor=pointer]
+        - generic [ref=e54]:
+          - generic [ref=e55]:
+            - img [ref=e57]
+            - generic [ref=e58]: Date of Journey
+          - generic [ref=e59] [cursor=pointer]:
+            - generic [ref=e63]:
+              - textbox [ref=e64]: 7th January, 2026
+              - paragraph [ref=e65]: Navigate forward to interact with the calendar and select a date. Press the question mark key to get the keyboard shortcuts for changing dates.
+            - generic [ref=e66]:
+              - button "Today" [ref=e67]
+              - button "Tomorrow" [ref=e68]
+        - button "Search" [ref=e70] [cursor=pointer]:
+          - generic [ref=e71]: Search
+      - generic [ref=e73]:
+        - generic [ref=e74]:
+          - generic [ref=e76]: Offers for You
+          - generic [ref=e78] [cursor=pointer]: View All
+        - generic [ref=e80]:
+          - generic [ref=e82] [cursor=pointer]: All
+          - generic [ref=e84] [cursor=pointer]: Zingbus
+          - generic [ref=e86] [cursor=pointer]: Valuebus
+          - generic [ref=e88] [cursor=pointer]: SUV
+        - generic [ref=e91]:
+          - img [ref=e93] [cursor=pointer]
+          - generic [ref=e95]:
+            - generic [ref=e99] [cursor=pointer]:
+              - generic [ref=e100]:
+                - img [ref=e102]
+                - heading [level=3] [ref=e103]: JOIN
+                - paragraph [ref=e104]: First booking? Use code JOIN & get upto 20% OFF!
+              - generic [ref=e105]:
+                - generic [ref=e106]: "Coupon Code : JOIN"
+                - img [ref=e107]
+            - generic [ref=e111] [cursor=pointer]:
+              - generic [ref=e112]:
+                - img [ref=e114]
+                - heading [level=3] [ref=e115]: EARLY
+                - paragraph [ref=e116]: Get upto 20% OFF with code EARLY!
+              - generic [ref=e117]:
+                - generic [ref=e118]: "Coupon Code : EARLY"
+                - img [ref=e119]
+            - generic [ref=e123] [cursor=pointer]:
+              - generic [ref=e124]:
+                - img [ref=e126]
+                - heading [level=3] [ref=e127]: GROUP
+                - paragraph [ref=e128]: Get upto 15% OFF on Group Bookings of 3 or More Seats!
+              - generic [ref=e129]:
+                - generic [ref=e130]: "Coupon Code : GROUP"
+                - img [ref=e131]
+            - generic [ref=e135] [cursor=pointer]:
+              - generic [ref=e136]:
+                - img [ref=e138]
+                - heading [level=3] [ref=e139]: WOMAN
+                - paragraph [ref=e140]: Get upto 15% OFF with code WOMAN!
+              - generic [ref=e141]:
+                - generic [ref=e142]: "Coupon Code : WOMAN"
+                - img [ref=e143]
+            - generic [ref=e147] [cursor=pointer]:
+              - generic [ref=e148]:
+                - img [ref=e150]
+                - heading [level=3] [ref=e151]: SUV15
+                - paragraph [ref=e152]: Get 15% OFF your first SUV ride! Use code SUV15
+              - generic [ref=e153]:
+                - generic [ref=e154]: "Coupon Code : SUV15"
+                - img [ref=e155]
+            - generic [ref=e159] [cursor=pointer]:
+              - generic [ref=e160]:
+                - img [ref=e162]
+                - heading [level=3] [ref=e163]: MAXX
+                - paragraph [ref=e164]: Enjoy up to 12% OFF on 7-star journeys with zingbus Maxx
+              - generic [ref=e165]:
+                - generic [ref=e166]: "Coupon Code : MAXX"
+                - img [ref=e167]
+            - generic [ref=e171] [cursor=pointer]:
+              - generic [ref=e172]:
+                - img [ref=e174]
+                - heading [level=3] [ref=e175]: VALUEFIRST
+                - paragraph [ref=e176]: Get 30% Off on bookings with code VALUEFIRST!
+              - generic [ref=e177]:
+                - generic [ref=e178]: "Coupon Code : VALUEFIRST"
+                - img [ref=e179]
+            - generic [ref=e183] [cursor=pointer]:
+              - generic [ref=e184]:
+                - img [ref=e186]
+                - heading [level=3] [ref=e187]: JOIN
+                - paragraph [ref=e188]: First booking? Use code JOIN & get upto 20% OFF!
+              - generic [ref=e189]:
+                - generic [ref=e190]: "Coupon Code : JOIN"
+                - img [ref=e191]
+            - generic [ref=e195] [cursor=pointer]:
+              - generic [ref=e196]:
+                - img "zingbus" [ref=e198]
+                - heading "EARLY" [level=3] [ref=e199]
+                - paragraph [ref=e200]: Get upto 20% OFF with code EARLY!
+              - generic [ref=e201]:
+                - generic [ref=e202]: "Coupon Code : EARLY"
+                - img "Copy coupon code" [ref=e203]
+            - generic [ref=e207] [cursor=pointer]:
+              - generic [ref=e208]:
+                - img "zingbus" [ref=e210]
+                - heading "GROUP" [level=3] [ref=e211]
+                - paragraph [ref=e212]: Get upto 15% OFF on Group Bookings of 3 or More Seats!
+              - generic [ref=e213]:
+                - generic [ref=e214]: "Coupon Code : GROUP"
+                - img "Copy coupon code" [ref=e215]
+            - generic [ref=e219] [cursor=pointer]:
+              - generic [ref=e220]:
+                - img "zingbus" [ref=e222]
+                - heading "WOMAN" [level=3] [ref=e223]
+                - paragraph [ref=e224]: Get upto 15% OFF with code WOMAN!
+              - generic [ref=e225]:
+                - generic [ref=e226]: "Coupon Code : WOMAN"
+                - img "Copy coupon code" [ref=e227]
+            - generic [ref=e231] [cursor=pointer]:
+              - generic [ref=e232]:
+                - img [ref=e234]
+                - heading [level=3] [ref=e235]: SUV15
+                - paragraph [ref=e236]: Get 15% OFF your first SUV ride! Use code SUV15
+              - generic [ref=e237]:
+                - generic [ref=e238]: "Coupon Code : SUV15"
+                - img [ref=e239]
+            - generic [ref=e243] [cursor=pointer]:
+              - generic [ref=e244]:
+                - img [ref=e246]
+                - heading [level=3] [ref=e247]: MAXX
+                - paragraph [ref=e248]: Enjoy up to 12% OFF on 7-star journeys with zingbus Maxx
+              - generic [ref=e249]:
+                - generic [ref=e250]: "Coupon Code : MAXX"
+                - img [ref=e251]
+            - generic [ref=e255] [cursor=pointer]:
+              - generic [ref=e256]:
+                - img [ref=e258]
+                - heading [level=3] [ref=e259]: VALUEFIRST
+                - paragraph [ref=e260]: Get 30% Off on bookings with code VALUEFIRST!
+              - generic [ref=e261]:
+                - generic [ref=e262]: "Coupon Code : VALUEFIRST"
+                - img [ref=e263]
+            - generic [ref=e267] [cursor=pointer]:
+              - generic [ref=e268]:
+                - img [ref=e270]
+                - heading [level=3] [ref=e271]: JOIN
+                - paragraph [ref=e272]: First booking? Use code JOIN & get upto 20% OFF!
+              - generic [ref=e273]:
+                - generic [ref=e274]: "Coupon Code : JOIN"
+                - img [ref=e275]
+            - generic [ref=e279] [cursor=pointer]:
+              - generic [ref=e280]:
+                - img [ref=e282]
+                - heading [level=3] [ref=e283]: EARLY
+                - paragraph [ref=e284]: Get upto 20% OFF with code EARLY!
+              - generic [ref=e285]:
+                - generic [ref=e286]: "Coupon Code : EARLY"
+                - img [ref=e287]
+            - generic [ref=e291] [cursor=pointer]:
+              - generic [ref=e292]:
+                - img [ref=e294]
+                - heading [level=3] [ref=e295]: GROUP
+                - paragraph [ref=e296]: Get upto 15% OFF on Group Bookings of 3 or More Seats!
+              - generic [ref=e297]:
+                - generic [ref=e298]: "Coupon Code : GROUP"
+                - img [ref=e299]
+            - generic [ref=e303] [cursor=pointer]:
+              - generic [ref=e304]:
+                - img [ref=e306]
+                - heading [level=3] [ref=e307]: WOMAN
+                - paragraph [ref=e308]: Get upto 15% OFF with code WOMAN!
+              - generic [ref=e309]:
+                - generic [ref=e310]: "Coupon Code : WOMAN"
+                - img [ref=e311]
+            - generic [ref=e315] [cursor=pointer]:
+              - generic [ref=e316]:
+                - img [ref=e318]
+                - heading [level=3] [ref=e319]: SUV15
+                - paragraph [ref=e320]: Get 15% OFF your first SUV ride! Use code SUV15
+              - generic [ref=e321]:
+                - generic [ref=e322]: "Coupon Code : SUV15"
+                - img [ref=e323]
+            - generic [ref=e327] [cursor=pointer]:
+              - generic [ref=e328]:
+                - img [ref=e330]
+                - heading [level=3] [ref=e331]: MAXX
+                - paragraph [ref=e332]: Enjoy up to 12% OFF on 7-star journeys with zingbus Maxx
+              - generic [ref=e333]:
+                - generic [ref=e334]: "Coupon Code : MAXX"
+                - img [ref=e335]
+            - generic [ref=e339] [cursor=pointer]:
+              - generic [ref=e340]:
+                - img [ref=e342]
+                - heading [level=3] [ref=e343]: VALUEFIRST
+                - paragraph [ref=e344]: Get 30% Off on bookings with code VALUEFIRST!
+              - generic [ref=e345]:
+                - generic [ref=e346]: "Coupon Code : VALUEFIRST"
+                - img [ref=e347]
+          - img [ref=e349] [cursor=pointer]
+      - generic [ref=e352]:
+        - generic [ref=e353]:
+          - heading "zingbus Offerings" [level=1] [ref=e354]
+          - paragraph [ref=e355]: Catering to every user and every need
+        - generic [ref=e361] [cursor=pointer]: Know More
+      - generic [ref=e362]:
+        - generic [ref=e363]:
+          - heading "6 years of ama-zing journeys" [level=1] [ref=e364]
+          - paragraph [ref=e365]: Connecting millions of travelers across India
+        - generic [ref=e366]:
+          - generic [ref=e367]:
+            - img "Travellers Icon" [ref=e369]
+            - generic [ref=e370]:
+              - generic [ref=e371]: 6M+
+              - generic [ref=e372]: Travellers
+          - generic [ref=e373]:
+            - img "Cities Icon" [ref=e375]
+            - generic [ref=e376]:
+              - generic [ref=e377]: 500+
+              - generic [ref=e378]: Cities
+          - generic [ref=e379]:
+            - img "Buses Icon" [ref=e381]
+            - generic [ref=e382]:
+              - generic [ref=e383]: 300+
+              - generic [ref=e384]: Buses
+        - img "Zingbus MAX - 6 years of ama-zing journeys" [ref=e386]
+      - img "banner" [ref=e389]
+      - generic [ref=e390]:
+        - generic [ref=e391]:
+          - img "ZingPrime Logo" [ref=e393]
+          - heading "One pass many benefits" [level=1] [ref=e394]
+          - paragraph [ref=e395]: Explore the benefits below
+        - generic [ref=e396]:
+          - generic [ref=e397]:
+            - img "Additional 5% OFF" [ref=e399]
+            - heading "Additional 5% OFF" [level=3] [ref=e400]
+            - paragraph [ref=e401]: Enjoy extra 5% OFF on every ride applied instantly at checkout.
+          - generic [ref=e402]:
+            - img "On-Time Guarantee" [ref=e404]
+            - heading "On-Time Guarantee" [level=3] [ref=e405]
+            - paragraph [ref=e406]: Claim a 50% refund coupon if your bus is delayed by 45 minutes or more
+          - generic [ref=e407]:
+            - img "Free Cancellation" [ref=e409]
+            - heading "Free Cancellation" [level=3] [ref=e410]
+            - paragraph [ref=e411]: Cancel your booking for FREE once every month.
+          - generic [ref=e412]:
+            - img "Free Travel insurance" [ref=e414]
+            - heading "Free Travel insurance" [level=3] [ref=e415]
+            - paragraph [ref=e416]: Get FREE travel protection with ₹7.5L coverage on every booking.
+        - button "Know More" [ref=e417] [cursor=pointer]
+      - img "Separation Image" [ref=e418]
+      - generic [ref=e419]:
+        - img "Valuebus Logo" [ref=e420]
+        - generic [ref=e421]: Get 10X Money Back Guarantee With Valuebus
+        - button "Know More" [ref=e422] [cursor=pointer]:
+          - generic [ref=e423]: Know More
+      - generic [ref=e425]:
+        - generic [ref=e427]: Revolution-zing travel with green initiatives!
+        - generic [ref=e428]:
+          - generic [ref=e429]:
+            - generic [ref=e430]:
+              - generic [ref=e431]: 14L Kg
+              - img "Leaf icon" [ref=e433]
+            - generic [ref=e434]: Carbon Footprint Neutralised
+          - generic [ref=e435]:
+            - generic [ref=e436]:
+              - generic [ref=e437]: 18L
+              - img "Bus icon" [ref=e439]
+            - generic [ref=e440]: Green Km Covered
+          - generic [ref=e441]:
+            - generic [ref=e442]:
+              - generic [ref=e443]: 248k+
+              - img "Users icon" [ref=e445]
+            - generic [ref=e446]:
+              - text: Users
+              - text: Opted In
+        - button "Know More" [ref=e447] [cursor=pointer]
+        - generic:
+          - img "Decorative left globe with leaves and butterflies"
+        - generic:
+          - img "Decorative right globe with leaves and butterflies"
+      - generic [ref=e449]:
+        - generic [ref=e451]:
+          - heading "Book Bus Ticket Online & Travel Anywhere" [level=2] [ref=e452]: Book Bus Ticket Online & Travel Anywhere
+          - generic [ref=e455]: Just a click away
+        - generic [ref=e458]:
+          - generic [ref=e459]:
+            - generic [ref=e462] [cursor=pointer]:
+              - img "dehradun" [ref=e464]
+              - generic [ref=e465]:
+                - generic [ref=e466]: Dehradun
+                - generic [ref=e467]: 27 trips available
+            - generic [ref=e470] [cursor=pointer]:
+              - img "rishikesh" [ref=e472]
+              - generic [ref=e473]:
+                - generic [ref=e474]: Rishikesh
+                - generic [ref=e475]: 27 trips available
+            - generic [ref=e478] [cursor=pointer]:
+              - img "chandigarh" [ref=e480]
+              - generic [ref=e481]:
+                - generic [ref=e482]: Chandigarh
+                - generic [ref=e483]: 26 trips available
+            - generic [ref=e486] [cursor=pointer]:
+              - img "himachal" [ref=e488]
+              - generic [ref=e489]:
+                - generic [ref=e490]: Manali
+                - generic [ref=e491]: 19 trips available
+          - generic [ref=e492]:
+            - generic [ref=e495] [cursor=pointer]:
+              - img "lucknow" [ref=e497]
+              - generic [ref=e498]:
+                - generic [ref=e499]: Lucknow
+                - generic [ref=e500]: 12 trips available
+            - generic [ref=e503] [cursor=pointer]:
+              - img "jaipur" [ref=e505]
+              - generic [ref=e506]:
+                - generic [ref=e507]: Jaipur
+                - generic [ref=e508]: 8 trips available
+            - generic [ref=e511] [cursor=pointer]:
+              - img "uttarakhand" [ref=e513]
+              - generic [ref=e514]:
+                - generic [ref=e515]: Haldwani
+                - generic [ref=e516]: 4 trips available
+            - generic [ref=e519] [cursor=pointer]:
+              - img "shimla" [ref=e521]
+              - generic [ref=e522]:
+                - generic [ref=e523]: Shimla
+                - generic [ref=e524]: 3 trips available
+      - generic [ref=e525]:
+        - generic [ref=e526]:
+          - button "Choose Zingbus" [ref=e527] [cursor=pointer]
+          - button "How to Book" [ref=e528] [cursor=pointer]
+          - button "On time guarantee" [ref=e529] [cursor=pointer]
+          - button "Lowest-price AC buses" [ref=e530] [cursor=pointer]
+          - button "Carbon-neutral ride" [ref=e531] [cursor=pointer]
+          - button "Book Bus Tickets Online" [ref=e532] [cursor=pointer]
+        - generic [ref=e534]:
+          - generic [ref=e535]:
+            - paragraph [ref=e536]:
+              - generic [ref=e537]:
+                - text: zingbus is a prominent bus service that has a vast network covering over
+                - strong [ref=e538]: 500 cities in 18+ states across North, West, and South India
+                - text: . With a fleet of more than 350 buses, zingbus offers convenient and quick online
+                - link "bus ticket bookings" [ref=e539] [cursor=pointer]:
+                  - /url: https://www.zingbus.com/bus-tickets
+                - text: through its user-friendly website and mobile app, as well as other OTA platforms. Having already served three million+ happy travellers, zingbus is known for its reliability and efficiency, making it India's most dependable bus service.
+            - paragraph [ref=e540]:
+              - generic [ref=e541]:
+                - text: When you choose to book your
+                - link "Volvo bus tickets" [ref=e542] [cursor=pointer]:
+                  - /url: https://www.zingbus.com/volvo-bus-ticket-booking
+                - text: online with zingbus, you gain access to a range of advantageous features and benefits. Enjoy the
+              - link "best bus ticket offers" [ref=e543] [cursor=pointer]:
+                - /url: https://www.zingbus.com/offers
+              - text: ", discounts, and cashback to save on your travel expenses. As a new user, you'll receive a special offer of ₹200 OFF on your first booking, while referrals can earn you ₹200 for every successful referral."
+            - paragraph [ref=e544]:
+              - generic [ref=e545]:
+                - text: Your safety and convenience are of utmost importance to zingbus. That's why they provide travel insurance coverage up to ₹7.5 Lac for added peace of mind. Moreover, they offer
+                - link "zero cancellation" [ref=e546] [cursor=pointer]:
+                  - /url: https://www.zingbus.com/blog/zero-cancellation/
+                - text: charges with instant refunds, ensuring flexibility in your travel plans.
+            - paragraph [ref=e547]:
+              - generic [ref=e548]:
+                - text: By choosing zingbus, you also contribute to a sustainable environment as they offer carbon-neutral rides. Their commitment to eco-friendliness aligns with their premium services, which include access to
+                - link "zingbus Premium Lounges" [ref=e549] [cursor=pointer]:
+                  - /url: https://www.zingbus.com/lounges
+                - text: for a comfortable and enjoyable journey.
+            - paragraph [ref=e550]: Customer satisfaction is a top priority for zingbus. Hence, they offer 24/7 WhatsApp support for any queries or assistance during your travel. Additionally, zingbus prioritizes the safety and comfort of female passengers, providing female-friendly rides with added security measures.
+            - paragraph [ref=e551]:
+              - generic [ref=e552]:
+                - text: Stay updated with your travel details by using the live bus tracking feature, ensuring you're informed throughout your journey. To make the entire experience even smoother, zingbus offers a user-friendly mobile app for hassle-free
+                - link "online bus ticket bookings" [ref=e553] [cursor=pointer]:
+                  - /url: https://www.zingbus.com/bus-tickets/
+                - text: . Let us redefine your travel journey with top-notch services and safety. Choose zingbus for a remarkable trip like never before!
+            - paragraph [ref=e554]
+            - paragraph [ref=e555]
+          - button "View More" [ref=e556] [cursor=pointer]
+    - generic [ref=e558]:
+      - generic [ref=e559]:
+        - generic [ref=e560]:
+          - generic [ref=e562] [cursor=pointer]: Top Bus Routes
+          - generic [ref=e564] [cursor=pointer]: Popular Bus Route
+          - generic [ref=e566] [cursor=pointer]: Buses From Top Cities
+          - generic [ref=e568] [cursor=pointer]: Top Destinations
+          - generic [ref=e570] [cursor=pointer]: Quick Links
+        - generic [ref=e571]:
+          - generic [ref=e572]:
+            - link "Delhi to Manali Bus" [ref=e573] [cursor=pointer]:
+              - /url: /bus-tickets/delhi-to-manali-bus-route
+              - generic [ref=e574]:
+                - img [ref=e575]
+                - text: Delhi to Manali Bus
+            - link "Manali to Delhi Bus" [ref=e577] [cursor=pointer]:
+              - /url: /bus-tickets/manali-to-delhi-bus-route
+              - generic [ref=e578]:
+                - img [ref=e579]
+                - text: Manali to Delhi Bus
+            - link "Agra to Gurgaon Bus" [ref=e581] [cursor=pointer]:
+              - /url: /bus-tickets/agra-to-gurgaon-bus-route
+              - generic [ref=e582]:
+                - img [ref=e583]
+                - text: Agra to Gurgaon Bus
+            - link "Gurgaon to Agra Bus" [ref=e585] [cursor=pointer]:
+              - /url: /bus-tickets/gurgaon-to-agra-bus-route
+              - generic [ref=e586]:
+                - img [ref=e587]
+                - text: Gurgaon to Agra Bus
+            - link "Delhi to Jaipur Bus" [ref=e589] [cursor=pointer]:
+              - /url: /bus-tickets/delhi-to-jaipur-bus-route
+              - generic [ref=e590]:
+                - img [ref=e591]
+                - text: Delhi to Jaipur Bus
+            - link "Dehradun to Delhi Bus" [ref=e593] [cursor=pointer]:
+              - /url: /bus-tickets/dehradun-to-delhi-bus-route
+              - generic [ref=e594]:
+                - img [ref=e595]
+                - text: Dehradun to Delhi Bus
+            - link "Delhi to Dehradun Bus" [ref=e597] [cursor=pointer]:
+              - /url: /bus-tickets/delhi-to-dehradun-bus-route
+              - generic [ref=e598]:
+                - img [ref=e599]
+                - text: Delhi to Dehradun Bus
+            - link "Jaipur to Delhi Bus" [ref=e601] [cursor=pointer]:
+              - /url: /bus-tickets/jaipur-to-delhi-bus-route
+              - generic [ref=e602]:
+                - img [ref=e603]
+                - text: Jaipur to Delhi Bus
+            - link "Delhi to Rishikesh Bus" [ref=e605] [cursor=pointer]:
+              - /url: /bus-tickets/delhi-to-rishikesh-bus-route
+              - generic [ref=e606]:
+                - img [ref=e607]
+                - text: Delhi to Rishikesh Bus
+            - link "Delhi to Shimla Bus" [ref=e609] [cursor=pointer]:
+              - /url: /bus-tickets/delhi-to-shimla-bus-route
+              - generic [ref=e610]:
+                - img [ref=e611]
+                - text: Delhi to Shimla Bus
+          - generic [ref=e613]:
+            - link "Rishikesh to Delhi Bus" [ref=e614] [cursor=pointer]:
+              - /url: /bus-tickets/rishikesh-to-delhi-bus-route
+              - generic [ref=e615]:
+                - img [ref=e616]
+                - text: Rishikesh to Delhi Bus
+            - link "Delhi to Aut Bus" [ref=e618] [cursor=pointer]:
+              - /url: /bus-tickets/delhi-to-aut-bus-route
+              - generic [ref=e619]:
+                - img [ref=e620]
+                - text: Delhi to Aut Bus
+            - link "Dehradun to Gurgaon Bus" [ref=e622] [cursor=pointer]:
+              - /url: /bus-tickets/dehradun-to-gurgaon-bus-route
+              - generic [ref=e623]:
+                - img [ref=e624]
+                - text: Dehradun to Gurgaon Bus
+            - link "Delhi to Haridwar Bus" [ref=e626] [cursor=pointer]:
+              - /url: /bus-tickets/delhi-to-haridwar-bus-route
+              - generic [ref=e627]:
+                - img [ref=e628]
+                - text: Delhi to Haridwar Bus
+            - link "Aut to Delhi Bus" [ref=e630] [cursor=pointer]:
+              - /url: /bus-tickets/aut-to-delhi-bus-route
+              - generic [ref=e631]:
+                - img [ref=e632]
+                - text: Aut to Delhi Bus
+            - link "Gurgaon to Jaipur Bus" [ref=e634] [cursor=pointer]:
+              - /url: /bus-tickets/gurgaon-to-jaipur-bus-route
+              - generic [ref=e635]:
+                - img [ref=e636]
+                - text: Gurgaon to Jaipur Bus
+            - link "Shimla to Delhi Bus" [ref=e638] [cursor=pointer]:
+              - /url: /bus-tickets/shimla-to-delhi-bus-route
+              - generic [ref=e639]:
+                - img [ref=e640]
+                - text: Shimla to Delhi Bus
+            - link "Delhi to Chandigarh Bus" [ref=e642] [cursor=pointer]:
+              - /url: /bus-tickets/delhi-to-chandigarh-bus-route
+              - generic [ref=e643]:
+                - img [ref=e644]
+                - text: Delhi to Chandigarh Bus
+            - link "Delhi to Kasol Bus" [ref=e646] [cursor=pointer]:
+              - /url: /bus-tickets/delhi-to-kasol-bus-route
+              - generic [ref=e647]:
+                - img [ref=e648]
+                - text: Delhi to Kasol Bus
+            - link "Kasol to Delhi Bus" [ref=e650] [cursor=pointer]:
+              - /url: /bus-tickets/kasol-to-delhi-bus-route
+              - generic [ref=e651]:
+                - img [ref=e652]
+                - text: Kasol to Delhi Bus
+          - generic [ref=e654]:
+            - link "Delhi to Mandi Bus" [ref=e655] [cursor=pointer]:
+              - /url: /bus-tickets/delhi-to-mandi-bus-route
+              - generic [ref=e656]:
+                - img [ref=e657]
+                - text: Delhi to Mandi Bus
+            - link "Chandigarh to Delhi Bus" [ref=e659] [cursor=pointer]:
+              - /url: /bus-tickets/chandigarh-to-delhi-bus-route
+              - generic [ref=e660]:
+                - img [ref=e661]
+                - text: Chandigarh to Delhi Bus
+            - link "Kullu to Delhi Bus" [ref=e663] [cursor=pointer]:
+              - /url: /bus-tickets/kullu-to-delhi-bus-route
+              - generic [ref=e664]:
+                - img [ref=e665]
+                - text: Kullu to Delhi Bus
+            - link "Bhuntar to Delhi Bus" [ref=e667] [cursor=pointer]:
+              - /url: /bus-tickets/bhuntar-to-delhi-bus-route
+              - generic [ref=e668]:
+                - img [ref=e669]
+                - text: Bhuntar to Delhi Bus
+            - link "Haridwar to Delhi Bus" [ref=e671] [cursor=pointer]:
+              - /url: /bus-tickets/haridwar-to-delhi-bus-route
+              - generic [ref=e672]:
+                - img [ref=e673]
+                - text: Haridwar to Delhi Bus
+            - link "Manali to Chandigarh Bus" [ref=e675] [cursor=pointer]:
+              - /url: /bus-tickets/manali-to-chandigarh-bus-route
+              - generic [ref=e676]:
+                - img [ref=e677]
+                - text: Manali to Chandigarh Bus
+            - link "Delhi to Kullu Bus" [ref=e679] [cursor=pointer]:
+              - /url: /bus-tickets/delhi-to-kullu-bus-route
+              - generic [ref=e680]:
+                - img [ref=e681]
+                - text: Delhi to Kullu Bus
+            - link "Chandigarh to Manali Bus" [ref=e683] [cursor=pointer]:
+              - /url: /bus-tickets/chandigarh-to-manali-bus-route
+              - generic [ref=e684]:
+                - img [ref=e685]
+                - text: Chandigarh to Manali Bus
+            - link "Gurgaon to Dehradun Bus" [ref=e687] [cursor=pointer]:
+              - /url: /bus-tickets/gurgaon-to-dehradun-bus-route
+              - generic [ref=e688]:
+                - img [ref=e689]
+                - text: Gurgaon to Dehradun Bus
+            - link "Jaipur to Gurgaon Bus" [ref=e691] [cursor=pointer]:
+              - /url: /bus-tickets/jaipur-to-gurgaon-bus-route
+              - generic [ref=e692]:
+                - img [ref=e693]
+                - text: Jaipur to Gurgaon Bus
+          - generic [ref=e695]:
+            - link "Delhi to Bhuntar Bus" [ref=e696] [cursor=pointer]:
+              - /url: /bus-tickets/delhi-to-bhuntar-bus-route
+              - generic [ref=e697]:
+                - img [ref=e698]
+                - text: Delhi to Bhuntar Bus
+            - link "Mandi to Delhi Bus" [ref=e700] [cursor=pointer]:
+              - /url: /bus-tickets/mandi-to-delhi-bus-route
+              - generic [ref=e701]:
+                - img [ref=e702]
+                - text: Mandi to Delhi Bus
+            - link "Gurgaon to Mathura Bus" [ref=e704] [cursor=pointer]:
+              - /url: /bus-tickets/gurgaon-to-mathura-bus-route
+              - generic [ref=e705]:
+                - img [ref=e706]
+                - text: Gurgaon to Mathura Bus
+            - link "Delhi to Dharamshala Bus" [ref=e708] [cursor=pointer]:
+              - /url: /bus-tickets/delhi-to-dharamshala-bus-route
+              - generic [ref=e709]:
+                - img [ref=e710]
+                - text: Delhi to Dharamshala Bus
+            - link "Mathura to Gurgaon Bus" [ref=e712] [cursor=pointer]:
+              - /url: /bus-tickets/mathura-to-gurgaon-bus-route
+              - generic [ref=e713]:
+                - img [ref=e714]
+                - text: Mathura to Gurgaon Bus
+            - link "Dharamshala to Delhi Bus" [ref=e716] [cursor=pointer]:
+              - /url: /bus-tickets/dharamshala-to-delhi-bus-route
+              - generic [ref=e717]:
+                - img [ref=e718]
+                - text: Dharamshala to Delhi Bus
+            - link "Rishikesh to Gurgaon Bus" [ref=e720] [cursor=pointer]:
+              - /url: /bus-tickets/rishikesh-to-gurgaon-bus-route
+              - generic [ref=e721]:
+                - img [ref=e722]
+                - text: Rishikesh to Gurgaon Bus
+            - link "Gurgaon to Rishikesh Bus" [ref=e724] [cursor=pointer]:
+              - /url: /bus-tickets/gurgaon-to-rishikesh-bus-route
+              - generic [ref=e725]:
+                - img [ref=e726]
+                - text: Gurgaon to Rishikesh Bus
+            - link "Mumbai to Goa Bus" [ref=e728] [cursor=pointer]:
+              - /url: /bus-tickets/mumbai-to-goa-bus-route
+              - generic [ref=e729]:
+                - img [ref=e730]
+                - text: Mumbai to Goa Bus
+            - link "Gurgaon to Haridwar Bus" [ref=e732] [cursor=pointer]:
+              - /url: /bus-tickets/gurgaon-to-haridwar-bus-route
+              - generic [ref=e733]:
+                - img [ref=e734]
+                - text: Gurgaon to Haridwar Bus
+          - generic [ref=e736]:
+            - link "Goa to Mumbai Bus" [ref=e737] [cursor=pointer]:
+              - /url: /bus-tickets/goa-to-mumbai-bus-route
+              - generic [ref=e738]:
+                - img [ref=e739]
+                - text: Goa to Mumbai Bus
+            - link "Delhi to Jalandhar Bus" [ref=e741] [cursor=pointer]:
+              - /url: /bus-tickets/delhi-to-jalandhar-bus-route
+              - generic [ref=e742]:
+                - img [ref=e743]
+                - text: Delhi to Jalandhar Bus
+            - link "Delhi to Jammu Bus" [ref=e745] [cursor=pointer]:
+              - /url: /bus-tickets/delhi-to-jammu-bus-route
+              - generic [ref=e746]:
+                - img [ref=e747]
+                - text: Delhi to Jammu Bus
+            - link "Delhi to Katra Bus" [ref=e749] [cursor=pointer]:
+              - /url: /bus-tickets/delhi-to-katra-bus-route
+              - generic [ref=e750]:
+                - img [ref=e751]
+                - text: Delhi to Katra Bus
+            - link "Delhi to Amritsar Bus" [ref=e753] [cursor=pointer]:
+              - /url: /bus-tickets/delhi-to-amritsar-bus-route
+              - generic [ref=e754]:
+                - img [ref=e755]
+                - text: Delhi to Amritsar Bus
+            - link "Pune to Goa Bus" [ref=e757] [cursor=pointer]:
+              - /url: /bus-tickets/pune-to-goa-bus-route
+              - generic [ref=e758]:
+                - img [ref=e759]
+                - text: Pune to Goa Bus
+            - link "Haridwar to Gurgaon Bus" [ref=e761] [cursor=pointer]:
+              - /url: /bus-tickets/haridwar-to-gurgaon-bus-route
+              - generic [ref=e762]:
+                - img [ref=e763]
+                - text: Haridwar to Gurgaon Bus
+            - link "Delhi to Mcleod Ganj Bus" [ref=e765] [cursor=pointer]:
+              - /url: /bus-tickets/delhi-to-mcleod-ganj-bus-route
+              - generic [ref=e766]:
+                - img [ref=e767]
+                - text: Delhi to Mcleod Ganj Bus
+            - link "Goa To Pune Bus" [ref=e769] [cursor=pointer]:
+              - /url: /bus-tickets/goa-to-pune-bus-route
+              - generic [ref=e770]:
+                - img [ref=e771]
+                - text: Goa To Pune Bus
+            - link "Chandigarh to Gurgaon Bus" [ref=e773] [cursor=pointer]:
+              - /url: /bus-tickets/chandigarh-to-gurgaon-bus-route
+              - generic [ref=e774]:
+                - img [ref=e775]
+                - text: Chandigarh to Gurgaon Bus
+      - generic [ref=e777]:
+        - generic [ref=e778]:
+          - img [ref=e779]
+          - generic [ref=e782]: 6th Floor, Incuspaze, M3M Urbana Premium, Golf Course Extension Road, Sector 67, Gurugram, Haryana 122101
+        - generic [ref=e783]:
+          - img [ref=e784]
+          - generic [ref=e786]: +91 82870 09889
+        - generic [ref=e787]:
+          - img [ref=e788]
+          - generic [ref=e793]: care@zingbus.com
+      - generic [ref=e794]:
+        - img [ref=e796]
+        - generic [ref=e807]: © 2025 All Rights Reserved
+        - link "Want to become an operator?" [ref=e808] [cursor=pointer]:
+          - /url: /operator
+    - text: "* * * * * * * *"
+    - generic [ref=e809] [cursor=pointer]:
+      - img "hep-icon" [ref=e810]
+      - img "help-icon" [ref=e811]
+  - alert [ref=e812]
+```
