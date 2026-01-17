@@ -13,6 +13,14 @@ export default defineConfig({
   /* Retry on CI only */
   retries: process.env.CI ? 2 : 0,
 
+  /* Timeout for each test */
+  timeout: 30 * 1000,
+
+  /* Timeout for expect assertions */
+  expect: {
+    timeout: 5000
+  },
+
   /* Workers */
   workers: process.env.CI ? 1 : undefined,
 
@@ -28,6 +36,10 @@ export default defineConfig({
     trace: 'on',
     screenshot: 'only-on-failure',
     video: 'retain-on-failure',
+    /* Visible browser mode */
+    headless: false,
+    /* Slow down actions */
+    slowMo: 500,
   },
 
   /* Browser projects */
@@ -35,14 +47,6 @@ export default defineConfig({
     {
       name: 'chromium',
       use: { ...devices['Desktop Chrome'] },
-    },
-    {
-      name: 'firefox',
-      use: { ...devices['Desktop Firefox'] },
-    },
-    {
-      name: 'webkit',
-      use: { ...devices['Desktop Safari'] },
     }
   ],
 });

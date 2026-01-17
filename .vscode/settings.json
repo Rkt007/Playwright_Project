@@ -1,38 +1,37 @@
 {
-  // ❌ Disable editor auto suggestions
+  // Disable auto popup while typing
   "editor.quickSuggestions": {
     "comments": "off",
     "strings": "off",
-    "other": "off"
+    "other": "on"
   },
-  "editor.suggestOnTriggerCharacters": false,
-  "editor.parameterHints.enabled": false,
+
+  // Enable dot-trigger suggestions (IMPORTANT)
+  "editor.suggestOnTriggerCharacters": true,
+
+  // Enable function parameter hints
+  "editor.parameterHints.enabled": true,
+
+  // Optional
   "editor.inlineSuggest.enabled": false,
 
-  // ❌ Disable JS specific suggestions
+  // JavaScript
   "[javascript]": {
     "editor.quickSuggestions": {
       "comments": "off",
       "strings": "off",
-      "other": "off"
+      "other": "on"
     },
-    "editor.suggestOnTriggerCharacters": false
+    "editor.suggestOnTriggerCharacters": true
   },
 
-  // (Optional) JS uses TS engine internally
+  // TypeScript (Playwright depends on this)
   "[typescript]": {
     "editor.quickSuggestions": {
       "comments": "off",
       "strings": "off",
-      "other": "off"
+      "other": "on"
     },
-    "editor.suggestOnTriggerCharacters": false
-  },
-
-  // ✅ Keep terminal suggestions (optional)
-  "terminal.integrated.suggest.quickSuggestions": {
-    "commands": "on",
-    "arguments": "on",
-    "unknown": "off"
+    "editor.suggestOnTriggerCharacters": true
   }
 }

@@ -1,9 +1,49 @@
 
-# Playwright
+# Dependencies
 node_modules/
+package-lock.json
+yarn.lock
+
+# Playwright
+.auth/
+test-results/
+playwright-report/
+blob-report/
+playwright/.cache/
 /test-results/
 /playwright-report/
 /blob-report/
 /playwright/.cache/
 /playwright/.auth/
+
+# Logs
+logs/
+logs/*.log
+*.log
+npm-debug.log*
+
+# Allure
+allure-results/
 /allure-report/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+
+# OS
+Thumbs.db
+
+# Environment
+.env
+.env.local
+.env.*.local
+
+# Temp files
+*.tmp
+temp/
+dist/
+build/
