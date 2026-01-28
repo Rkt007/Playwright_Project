@@ -1,7 +1,4 @@
-exports.LoginPage= class LoginPage {
-
-
-  // constructor
+export class LoginPage {
 
   constructor(page) {
     this.page = page;

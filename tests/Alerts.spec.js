@@ -28,7 +28,7 @@ test('confirmBtn with Cancel or ok', async ({ page }) => {
   await page.waitForTimeout(3000);
 });
 
-test.only('promptBtn dialog', async ({ page }) => {
+test('promptBtn dialog', async ({ page }) => {
   await page.goto('https://testautomationpractice.blogspot.com/');
 
   page.on('dialog', async dialog => {

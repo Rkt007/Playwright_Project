@@ -6,9 +6,6 @@ test('multiselect dropdown test', async ({ page }) => {
 
   const multiselect = page.locator('select[name="multipleselect[]"]');
 
-  // by using value 
-  // await multiselect.selectOption([{value:'ms1'},{value:'ms2'}]);
-
   // Select using label
   await multiselect.selectOption([
     { label: 'Selection Item 1' },
@@ -19,7 +16,7 @@ test('multiselect dropdown test', async ({ page }) => {
   const selectedOptions = multiselect.locator('option:checked');
   await expect(selectedOptions).toHaveText([ 'Selection Item 1','Selection Item 3']);
 
-
-  await expect(selectedOptions).toHaveAttribute('Multiple');
-  await page.waitForTimeout(3000);
+  // Verify the select element has multiple attribute
+  await expect(multiselect).toHaveAttribute('multiple');
+  await page.waitForTimeout(2000);
 });

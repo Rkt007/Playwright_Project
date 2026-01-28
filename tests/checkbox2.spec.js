@@ -22,12 +22,11 @@ test('checkbox test', async ({ page }) => {
   await expect(checkboxes.first()).toBeChecked();
   await expect(checkboxes.nth(1)).toBeChecked();
   await expect(checkboxes.last()).toBeChecked(); 
-
   // check total checkbox on same time
-  const allcheckbox = page.locator("//input[@type='checkbox']").all();
+  const checkboxLocators = page.locator("//input[@type='checkbox']");
+  const allcheckbox = await checkboxLocators.all();
   for (const checkbox of allcheckbox) {
-    await allcheckbox.check();
-    allcheckbox.count();
+    await checkbox.check();
     await expect.soft(checkbox).toBeChecked();
   }
 });

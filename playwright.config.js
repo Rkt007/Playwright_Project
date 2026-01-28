@@ -28,7 +28,7 @@ export default defineConfig({
   reporter: [
     ['list'],
     ['html', { open: 'never' }],
-    ['allure-playwright']
+    ['allure-playwright', { outputFolder: 'my-allure-results' }],
   ],
 
   /* Shared settings */
@@ -36,10 +36,8 @@ export default defineConfig({
     trace: 'on',
     screenshot: 'only-on-failure',
     video: 'retain-on-failure',
-    /* Visible browser mode */
-    headless: false,
-    /* Slow down actions */
-    slowMo: 500,
+    /* Run in headless mode */
+    headless: true,
   },
 
   /* Browser projects */
@@ -47,6 +45,14 @@ export default defineConfig({
     {
       name: 'chromium',
       use: { ...devices['Desktop Chrome'] },
-    }
+    },
+    {
+      name: 'firefox',
+      use: { ...devices['Desktop Firefox'] },
+    },
+    {
+      name: 'webkit',
+      use: { ...devices['Desktop Safari'] },
+    },
   ],
 });
