@@ -22,7 +22,7 @@ export default defineConfig({
   },
 
   /* Workers */
-  workers: process.env.CI ? 1 : undefined,
+  workers: process.env.CI ? 4 : undefined,
 
   /* ✅ REPORTERS (HTML + Allure) */
   reporter: [

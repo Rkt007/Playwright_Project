@@ -2,9 +2,7 @@ import { test, expect } from "@playwright/test";
 
 test('goibibo datepicker', async ({ page }) => {
 
-  await page.goto('https://www.goibibo.com/flights/', {
-    waitUntil: 'networkidle'
-  });
+  await page.goto('https://www.goibibo.com/flights/', { waitUntil: 'networkidle'});
 
   // Close login popup safely
   const popup = page.locator('.logSprite.icClose');
@@ -23,9 +21,7 @@ test('goibibo datepicker', async ({ page }) => {
   // Navigate to target month
   while (true) {
     const monthYearText = await page
-      .locator('.DayPicker-Caption div')
-      .first()
-      .innerText();
+      .locator('.DayPicker-Caption div').first().innerText();
 
     if (monthYearText.trim() === targetMonthYear) {
       break;
