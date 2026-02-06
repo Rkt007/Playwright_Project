@@ -7,37 +7,44 @@ export default defineConfig({
   /* Run tests in parallel */
   fullyParallel: true,
 
-  /* Fail the build on CI if test.only is left */
+  /* Fail build if test.only is committed */
   forbidOnly: !!process.env.CI,
 
-  /* Retry on CI only */
+  /* Retries – critical for flaky handling in CI */
   retries: process.env.CI ? 2 : 0,
 
-  /* Timeout for each test */
+  /* Global test timeout */
   timeout: 30 * 1000,
 
-  /* Timeout for expect assertions */
+  /* Expect assertion timeout */
   expect: {
-    timeout: 5000
+    timeout: 5000,
   },
 
-  /* Workers */
-  workers: process.env.CI ? 4 : undefined,
+  /* Workers – controlled for Jenkins stability */
+  workers: process.env.CI ? 2 : undefined,
+  // (2 is safer than 4 on shared Jenkins agents)
 
-  /* ✅ REPORTERS (HTML + Allure) */
+  /* 🔥 REPORTERS – Jenkins friendly */
   reporter: [
     ['list'],
-    ['html', { open: 'never' }],
-    ['allure-playwright', { outputFolder: 'my-allure-results' }],
+    ['html', { open: 'never', outputFolder: 'playwright-report' }],
+    ['json', { outputFile: 'playwright-report/results.json' }],
+    ['allure-playwright', { outputFolder: 'allure-results' }],
   ],
 
-  /* Shared settings */
+  /* Shared settings for all tests */
   use: {
-    trace: 'on',
+    headless: true,
+
+    /* Artifacts – very useful in Jenkins */
+    trace: 'retain-on-failure',
     screenshot: 'only-on-failure',
     video: 'retain-on-failure',
-    /* Run in headless mode */
-    headless: true,
+
+    /* Slower actions improve CI stability */
+    actionTimeout: 10 * 1000,
+    navigationTimeout: 30 * 1000,
   },
 
   /* Browser projects */
@@ -46,6 +53,8 @@ export default defineConfig({
       name: 'chromium',
       use: { ...devices['Desktop Chrome'] },
     }
+
+    // Enable later if Jenkins infra is strong
     /*
     {
       name: 'firefox',
@@ -54,6 +63,7 @@ export default defineConfig({
     {
       name: 'webkit',
       use: { ...devices['Desktop Safari'] },
-    },*/
+    }
+    */
   ],
 });
