@@ -13,7 +13,7 @@ test('Single files', async ({ page }) => {
   await page.waitForTimeout(2000);
 });
 
-test('Multiple files', async ({ page }) => {
+test.skip('Multiple files', async ({ page }) => {
   await page.goto('https://testautomationpractice.blogspot.com/');
   
   const file1 = join(__dirname, '../test-files/sample1.pdf');

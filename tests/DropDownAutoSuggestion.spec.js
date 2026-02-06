@@ -1,48 +1,31 @@
 import { test, expect } from "@playwright/test";
 
-test('AutoSuggestionDropDown', async ({ page }) => {
+test('@regression AutoSuggestionDropDown', async ({ page }) => {
 
   await page.goto('https://www.cleartrip.com/');
 
-  // Handle login popup
-  const loginicon = page.locator('[data-testid="loginPopup"]');
+  // Handle login popup safely
   const closeicon = page.locator('[data-testid="closeIcon"]');
-
-  try {
-    if (await loginicon.isVisible({ timeout: 4000 })) {
-      await closeicon.click();
-    }
-  } catch (error) {
-    // popup not visible
+  if (await closeicon.isVisible().catch(() => false)) {
+    await closeicon.click();
   }
 
   // From input
   const inputfrom = page.getByPlaceholder('Where from?');
-  await inputfrom.click();
   await inputfrom.fill('del');
 
   // Auto-suggestion items
   const suggestions = page.locator('.airportList li');
+  const count = await suggestions.count();
 
-  const allTexts = await suggestions.allTextContents();
-  console.log(allTexts);
-
- //  await suggestions.first().click();
-  // Use JS forEach
-  allTexts.forEach((text, index) => {
+  for (let i = 0; i < count; i++) {
+    const text = await suggestions.nth(i).innerText();
     if (text.includes('New Delhi')) {
-      suggestions.nth(index).click(); // Playwright handles promise
+      await suggestions.nth(i).click();
+      break;
     }
-  });
+  }
 
- // for (let i = 0; i < count; i++) {
- // const text = await suggestions.nth(i).textContent();
-//  if (text.includes('New Delhi')) {
-//    await suggestions.nth(i).click();
-//    break;
-//  }
-//}
-
-
-  await page.waitForTimeout(5000);
+  // ✅ Assertion: input updated
+  await expect(inputfrom).toHaveValue(/Delhi/i);
 });

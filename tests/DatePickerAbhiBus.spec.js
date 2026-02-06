@@ -1,14 +1,25 @@
 import { test, expect } from '@playwright/test';
 
-test('test', async ({ page }) => {
+test('@regression Select onward journey date', async ({ page }) => {
+
   await page.goto('https://www.abhibus.com/');
+
+  // Open calendar
   await page.getByRole('textbox', { name: 'Onward Journey Date' }).click();
-  await page.getByText('January').click();
-  await page.locator('#jaurney-date').getByText('2026').click();
-  await page.locator('i > svg').click();
-  await page.locator('i > svg').dblclick();
-  await page.locator('div:nth-child(3) > .calender-month-change > i > svg').click();
-  await page.locator('div:nth-child(3) > .calender-month-change > i > svg').click();
-  await page.locator('div:nth-child(3) > .calender-month-change > i > svg').click();
+
+  // Select year
+  await page.getByText('2026').click();
+
+  // Navigate to January if not visible
+  while (!(await page.getByText('January').isVisible())) {
+    await page.locator('.calender-month-change svg').first().click();
+  }
+
+  // Select date
   await page.getByRole('button', { name: '16' }).click();
+
+  // ✅ Assertion: date input updated
+  const onwardDate = page.getByRole('textbox', { name: 'Onward Journey Date' });
+  await expect(onwardDate).toHaveValue(/16/);
+
 });

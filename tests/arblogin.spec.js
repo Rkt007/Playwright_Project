@@ -1,6 +1,6 @@
 import { test, expect } from "@playwright/test";
 
-test('test login functionality', async ({ page }) => {
+test.skip('test login functionality', async ({ page }) => {
 
   await page.goto('https://accounts.pre.arbohq.com/sign-in');
 

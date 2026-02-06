@@ -13,6 +13,4 @@ test('amazon search test', async ({ page }) => {
   // Verify results page loaded
   await expect(page).toHaveURL(/s\?/);
 
-  await searchBox.locator('')
-
 });
