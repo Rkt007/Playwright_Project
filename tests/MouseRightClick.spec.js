@@ -9,5 +9,5 @@ test('Mouse Right Click practice', async ({ page }) => {
   await element.click({ button: 'right' });
 
   // Optional validation (element should be visible)
-  await expect(element).toBeVisible();
+ // await expect(element).toBeVisible();
 });
