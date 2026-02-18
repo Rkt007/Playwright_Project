@@ -28,6 +28,16 @@ pipeline {
                 '''
             }
         }
+
+        stage('Upload Report to S3') {
+            steps {
+                sh '''
+                aws s3 sync playwright-report/ \
+                s3://rahul-playwright-reports-2026/build-$BUILD_NUMBER/ \
+                --delete
+                '''
+            }
+        }
     }
 
     post {
