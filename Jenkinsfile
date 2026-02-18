@@ -6,17 +6,37 @@ pipeline {
         }
     }
 
+    environment {
+        CI = 'true'
+    }
+
+    options {
+        timestamps()
+    }
+
     stages {
 
-        stage('Install Dependencies') {
+        stage('Checkout Code') {
             steps {
-                sh 'npm install'
+                checkout scm
             }
         }
 
-        stage('Run Playwright Tests') {
+        stage('Install Dependencies') {
             steps {
-                sh 'npx playwright test'
+                sh 'npm ci'
+            }
+        }
+
+        stage('Install Browsers') {
+            steps {
+                sh 'npx playwright install --with-deps'
+            }
+        }
+
+        stage('Run Tests') {
+            steps {
+                sh 'npx playwright test --reporter=html'
             }
         }
     }
@@ -24,6 +44,15 @@ pipeline {
     post {
         always {
             archiveArtifacts artifacts: 'playwright-report/**', allowEmptyArchive: true
+            junit 'test-results/**/*.xml'
+        }
+
+        success {
+            echo '✅ Tests Passed Successfully!'
+        }
+
+        failure {
+            echo '❌ Tests Failed!'
         }
     }
 }
