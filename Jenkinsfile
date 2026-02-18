@@ -1,5 +1,10 @@
 pipeline {
-    agent any
+    agent {
+        docker {
+            image 'mcr.microsoft.com/playwright:v1.40.0-jammy'
+            args '-u root'
+        }
+    }
 
     options {
         timestamps()
@@ -26,7 +31,7 @@ pipeline {
             }
         }
 
-        stage('Run Playwright Tests in Docker') {
+        stage('Install & Run Tests') {
             steps {
                 script {
                     def testCommand = ""
@@ -42,15 +47,9 @@ pipeline {
                     }
 
                     sh """
-                    docker run --rm \
-                      -v \$WORKSPACE:/app \
-                      -w /app \
-                      mcr.microsoft.com/playwright:v1.40.0-jammy \
-                      bash -c "
-                        npm ci &&
-                        npx playwright install --with-deps &&
+                        npm ci
+                        npx playwright install --with-deps
                         ${testCommand}
-                      "
                     """
                 }
             }
@@ -68,22 +67,9 @@ pipeline {
     }
 
     post {
-
         always {
             archiveArtifacts artifacts: 'playwright-report/**', allowEmptyArchive: true
             junit allowEmptyResults: true, testResults: 'test-results/*.xml'
-        }
-
-        success {
-            echo "✅ Tests Passed Successfully!"
-            echo "Report URL:"
-            echo "https://${S3_BUCKET}.s3.amazonaws.com/${BUILD_FOLDER}/index.html"
-        }
-
-        failure {
-            echo "❌ Tests Failed!"
-            echo "Failure Report URL:"
-            echo "https://${S3_BUCKET}.s3.amazonaws.com/${BUILD_FOLDER}/index.html"
         }
     }
 }
