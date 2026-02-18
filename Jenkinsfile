@@ -1,10 +1,5 @@
 pipeline {
-
     agent any
-
-    environment {
-        CI = 'true'
-    }
 
     options {
         timestamps()
@@ -20,15 +15,17 @@ pipeline {
 
         stage('Run Playwright Tests in Docker') {
             steps {
-                script {
-                    docker.image('mcr.microsoft.com/playwright:v1.40.0-jammy')
-                          .inside('--user root') {
-
-                        sh 'npm ci'
-                        sh 'npx playwright install --with-deps'
-                        sh 'npx playwright test --reporter=html'
-                    }
-                }
+                sh '''
+                docker run --rm \
+                  -v $WORKSPACE:/app \
+                  -w /app \
+                  mcr.microsoft.com/playwright:v1.40.0-jammy \
+                  bash -c "
+                    npm ci &&
+                    npx playwright install --with-deps &&
+                    npx playwright test --reporter=html,junit
+                  "
+                '''
             }
         }
     }
@@ -36,6 +33,7 @@ pipeline {
     post {
         always {
             archiveArtifacts artifacts: 'playwright-report/**', allowEmptyArchive: true
+            junit allowEmptyResults: true, testResults: 'test-results/*.xml'
         }
 
         success {
