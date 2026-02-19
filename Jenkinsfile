@@ -1,7 +1,8 @@
 pipeline {
+
     agent {
         docker {
-           image '102783063324.dkr.ecr.eu-north-1.amazonaws.com/playwright-framework:latest'
+            image '102783063324.dkr.ecr.eu-north-1.amazonaws.com/playwright-framework:latest'
             args '-u root --ipc=host'
         }
     }
@@ -29,6 +30,12 @@ pipeline {
         S3_BUCKET = "rahul-playwright-reports-2026"
         BUILD_FOLDER = "build-${BUILD_NUMBER}"
         JAVA_HOME = "/usr/lib/jvm/java-17-openjdk-amd64"
+
+        AWS_DEFAULT_REGION = "eu-north-1"
+        AWS_REGION = "eu-north-1"
+
+        AWS_ACCESS_KEY_ID = credentials('aws-access-key-id')
+        AWS_SECRET_ACCESS_KEY = credentials('aws-secret-access-key')
     }
 
     stages {
@@ -39,13 +46,14 @@ pipeline {
             }
         }
 
-        stage('Install Java') {
+        stage('Install Dependencies') {
             steps {
-                sh """
+                sh '''
                     apt-get update
-                    apt-get install -y openjdk-17-jdk
+                    apt-get install -y openjdk-17-jdk awscli
                     java -version
-                """
+                    aws --version
+                '''
             }
         }
 
@@ -55,7 +63,6 @@ pipeline {
 
                     def testCommand = ""
 
-                    // Detect scheduled run safely
                     if (env.BUILD_CAUSE_TIMERTRIGGER) {
 
                         echo "Scheduled run detected"
@@ -90,16 +97,15 @@ pipeline {
                             export JAVA_HOME=${JAVA_HOME}
                             export PATH=\$JAVA_HOME/bin:\$PATH
                             npm ci
+                            npx playwright install --with-deps
                             ${testCommand}
                         """,
                         returnStatus: true
                     )
 
                     sh """
-                        export JAVA_HOME=${JAVA_HOME}
-                        export PATH=\$JAVA_HOME/bin:\$PATH
                         echo "Generating Allure report..."
-                        npx allure generate allure-results --clean -o allure-report
+                        npx allure generate allure-results --clean -o allure-report || true
                     """
 
                     if (exitCode != 0) {
@@ -111,10 +117,10 @@ pipeline {
 
         stage('Upload Allure Report to S3') {
             steps {
-                sh """
-                    echo "Uploading Allure report..."
+                sh '''
+                    echo "Uploading Allure report to S3..."
                     aws s3 sync allure-report/ s3://${S3_BUCKET}/${BUILD_FOLDER}/ --delete
-                """
+                '''
             }
         }
     }
@@ -123,7 +129,7 @@ pipeline {
         always {
             echo "=============================="
             echo "Allure report available at:"
-           echo "https://${env.S3_BUCKET}.s3.eu-north-1.amazonaws.com/${env.BUILD_FOLDER}/index.html"
+            echo "https://${env.S3_BUCKET}.s3.${env.AWS_REGION}.amazonaws.com/${env.BUILD_FOLDER}/index.html"
             echo "=============================="
         }
     }
