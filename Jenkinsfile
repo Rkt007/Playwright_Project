@@ -34,6 +34,7 @@ pipeline {
         stage('Install & Run Tests') {
             steps {
                 script {
+
                     def testCommand = ""
 
                     if (params.TEST_TYPE == "smoke") {
@@ -46,20 +47,25 @@ pipeline {
                         testCommand = "npx playwright test"
                     }
 
-                    // Capture exit code manually
+                    // Run tests and capture exit code
                     def exitCode = sh(
                         script: """
                             npm ci
-                            npm install -g allure-commandline
                             ${testCommand}
                         """,
                         returnStatus: true
                     )
 
                     // Always generate Allure report
-                    sh "npx allure generate allure-results --clean -o allure-report"
+                    sh """
+                        echo "Generating Allure report..."
+                        npx allure generate allure-results --clean -o allure-report
+                        echo "===== Checking Allure Folder ====="
+                        ls -la
+                        ls -la allure-report || true
+                    """
 
-                    // Mark build as failed if tests failed
+                    // Mark build failed if tests failed
                     if (exitCode != 0) {
                         currentBuild.result = 'FAILURE'
                     }
@@ -68,19 +74,23 @@ pipeline {
         }
 
         stage('Upload Allure Report to S3') {
-    steps {
-        sh """
-            echo "Uploading full Allure report..."
-            aws s3 sync allure-report/ s3://${S3_BUCKET}/${BUILD_FOLDER}/ --delete
-        """
-    }
-}
+            steps {
+                script {
+                    sh """
+                        echo "Uploading full Allure report..."
+                        aws s3 sync allure-report/ s3://${S3_BUCKET}/${BUILD_FOLDER}/ --delete
+                    """
+                }
+            }
+        }
     }
 
     post {
         always {
+            echo "=============================="
             echo "Allure report available at:"
             echo "https://${S3_BUCKET}.s3.eu-north-1.amazonaws.com/${BUILD_FOLDER}/index.html"
+            echo "=============================="
         }
     }
 }
