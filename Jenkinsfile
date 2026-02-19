@@ -123,7 +123,7 @@ pipeline {
         always {
             echo "=============================="
             echo "Allure report available at:"
-            echo "https://${S3_BUCKET}.s3.eu-north-1.amazonaws.com/${BUILD_FOLDER}/index.html"
+           echo "https://${env.S3_BUCKET}.s3.eu-north-1.amazonaws.com/${env.BUILD_FOLDER}/index.html"
             echo "=============================="
         }
     }
