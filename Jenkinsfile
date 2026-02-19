@@ -10,11 +10,20 @@ pipeline {
         timestamps()
     }
 
+    // 🔥 CRON TRIGGERS
+    triggers {
+        // Smoke: Monday–Friday at 10 AM IST
+        cron('TZ=Asia/Kolkata\nH 10 * * 1-5')
+
+        // Regression: Saturday at 12 PM IST
+        cron('TZ=Asia/Kolkata\nH 12 * * 6')
+    }
+
     parameters {
         choice(
             name: 'TEST_TYPE',
             choices: ['smoke', 'regression', 'all'],
-            description: 'Select which test suite to run'
+            description: 'Select which test suite to run (Manual Trigger Only)'
         )
     }
 
@@ -47,40 +56,47 @@ pipeline {
                 script {
 
                     def testCommand = ""
+                    def day = sh(script: "date +%u", returnStdout: true).trim()
+                    // 1=Mon ... 6=Sat ... 7=Sun
 
-                    if (params.TEST_TYPE == "smoke") {
-                        testCommand = "npx playwright test --grep @smoke"
-                    } 
-                    else if (params.TEST_TYPE == "regression") {
-                        testCommand = "npx playwright test --grep @regression"
-                    } 
-                    else {
-                        testCommand = "npx playwright test"
+                    if (currentBuild.rawBuild.getCause(hudson.model.Cause$UserIdCause)) {
+                        // Manual Run
+                        echo "Manual run detected"
+                        if (params.TEST_TYPE == "smoke") {
+                            testCommand = "npx playwright test --grep @smoke"
+                        } 
+                        else if (params.TEST_TYPE == "regression") {
+                            testCommand = "npx playwright test --grep @regression"
+                        } 
+                        else {
+                            testCommand = "npx playwright test"
+                        }
+                    } else {
+                        // Scheduled Run
+                        if (day == "6") {
+                            echo "Weekend detected → Running Regression Suite"
+                            testCommand = "npx playwright test --grep @regression"
+                        } else {
+                            echo "Weekday detected → Running Smoke Suite"
+                            testCommand = "npx playwright test --grep @smoke"
+                        }
                     }
 
-                    // Run tests and capture exit code
                     def exitCode = sh(
                         script: """
                             export JAVA_HOME=${JAVA_HOME}
                             export PATH=\$JAVA_HOME/bin:\$PATH
-
                             npm ci
                             ${testCommand}
                         """,
                         returnStatus: true
                     )
 
-                    // Always generate Allure report
                     sh """
                         export JAVA_HOME=${JAVA_HOME}
                         export PATH=\$JAVA_HOME/bin:\$PATH
-
                         echo "Generating Allure report..."
                         npx allure generate allure-results --clean -o allure-report
-
-                        echo "===== Checking Allure Folder ====="
-                        ls -la
-                        ls -la allure-report || true
                     """
 
                     if (exitCode != 0) {
@@ -93,7 +109,7 @@ pipeline {
         stage('Upload Allure Report to S3') {
             steps {
                 sh """
-                    echo "Uploading full Allure report..."
+                    echo "Uploading Allure report..."
                     aws s3 sync allure-report/ s3://${S3_BUCKET}/${BUILD_FOLDER}/ --delete
                 """
             }
