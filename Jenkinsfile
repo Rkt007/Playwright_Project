@@ -46,12 +46,23 @@ pipeline {
                         testCommand = "npx playwright test"
                     }
 
-                    sh """
-                        npm ci
-                        npm install -g allure-commandline
-                        ${testCommand}
-                        npx allure generate allure-results --clean -o allure-report
-                    """
+                    // Capture exit code manually
+                    def exitCode = sh(
+                        script: """
+                            npm ci
+                            npm install -g allure-commandline
+                            ${testCommand}
+                        """,
+                        returnStatus: true
+                    )
+
+                    // Always generate Allure report
+                    sh "npx allure generate allure-results --clean -o allure-report"
+
+                    // Mark build as failed if tests failed
+                    if (exitCode != 0) {
+                        currentBuild.result = 'FAILURE'
+                    }
                 }
             }
         }
@@ -69,7 +80,8 @@ pipeline {
 
     post {
         always {
-            echo "Allure report uploaded to S3: s3://${S3_BUCKET}/${BUILD_FOLDER}/index.html"
+            echo "Allure report available at:"
+            echo "https://${S3_BUCKET}.s3.eu-north-1.amazonaws.com/${BUILD_FOLDER}/index.html"
         }
     }
 }
