@@ -10,7 +10,6 @@ pipeline {
         timestamps()
     }
 
-    // ✅ FIXED CRON (Single Block)
     triggers {
         cron('''
             H 10 * * 1-5
@@ -55,10 +54,26 @@ pipeline {
                 script {
 
                     def testCommand = ""
-                    def day = sh(script: "date +%u", returnStdout: true).trim()
 
-                    if (currentBuild.rawBuild.getCause(hudson.model.Cause$UserIdCause)) {
+                    // Detect scheduled run safely
+                    if (env.BUILD_CAUSE_TIMERTRIGGER) {
+
+                        echo "Scheduled run detected"
+
+                        def day = sh(script: "date +%u", returnStdout: true).trim()
+
+                        if (day == "6") {
+                            echo "Weekend → Running Regression Suite"
+                            testCommand = "npx playwright test --grep @regression"
+                        } else {
+                            echo "Weekday → Running Smoke Suite"
+                            testCommand = "npx playwright test --grep @smoke"
+                        }
+
+                    } else {
+
                         echo "Manual run detected"
+
                         if (params.TEST_TYPE == "smoke") {
                             testCommand = "npx playwright test --grep @smoke"
                         } 
@@ -67,14 +82,6 @@ pipeline {
                         } 
                         else {
                             testCommand = "npx playwright test"
-                        }
-                    } else {
-                        if (day == "6") {
-                            echo "Weekend detected → Running Regression Suite"
-                            testCommand = "npx playwright test --grep @regression"
-                        } else {
-                            echo "Weekday detected → Running Smoke Suite"
-                            testCommand = "npx playwright test --grep @smoke"
                         }
                     }
 
