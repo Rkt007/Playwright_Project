@@ -13,7 +13,6 @@ pipeline {
     // ✅ FIXED CRON (Single Block)
     triggers {
         cron('''
-            TZ=Asia/Kolkata
             H 10 * * 1-5
             H 12 * * 6
         ''')
