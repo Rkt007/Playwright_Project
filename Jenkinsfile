@@ -1,7 +1,7 @@
 pipeline {
     agent {
         docker {
-            image 'mcr.microsoft.com/playwright:v1.58.0-jammy'
+           image '102783063324.dkr.ecr.eu-north-1.amazonaws.com/playwright-framework:latest'
             args '-u root --ipc=host'
         }
     }
