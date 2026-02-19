@@ -37,29 +37,31 @@ pipeline {
                     def testCommand = ""
 
                     if (params.TEST_TYPE == "smoke") {
-                        testCommand = "npx playwright test --grep @smoke --reporter=html,junit"
+                        testCommand = "npx playwright test --grep @smoke"
                     } 
                     else if (params.TEST_TYPE == "regression") {
-                        testCommand = "npx playwright test --grep @regression --reporter=html,junit"
+                        testCommand = "npx playwright test --grep @regression"
                     } 
                     else {
-                        testCommand = "npx playwright test --reporter=html,junit"
+                        testCommand = "npx playwright test"
                     }
 
                     sh """
                         npm ci
+                        npm install -g allure-commandline
                         ${testCommand}
+                        npx allure generate allure-results --clean -o allure-report
                     """
                 }
             }
         }
 
-        stage('Upload Report to S3') {
+        stage('Upload Allure Report to S3') {
             steps {
                 sh """
-                aws s3 sync playwright-report/ \
-                s3://${S3_BUCKET}/${BUILD_FOLDER}/ \
-                --delete
+                    aws s3 sync allure-report/ \
+                    s3://${S3_BUCKET}/${BUILD_FOLDER}/ \
+                    --delete
                 """
             }
         }
@@ -67,8 +69,7 @@ pipeline {
 
     post {
         always {
-            archiveArtifacts artifacts: 'playwright-report/**', allowEmptyArchive: true
-            junit allowEmptyResults: true, testResults: 'test-results/*.xml'
+            echo "Allure report uploaded to S3: s3://${S3_BUCKET}/${BUILD_FOLDER}/index.html"
         }
     }
 }
