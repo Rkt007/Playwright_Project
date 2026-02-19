@@ -21,6 +21,7 @@ pipeline {
     environment {
         S3_BUCKET = "rahul-playwright-reports-2026"
         BUILD_FOLDER = "build-${BUILD_NUMBER}"
+        JAVA_HOME = "/usr/lib/jvm/java-17-openjdk-amd64"
     }
 
     stages {
@@ -28,6 +29,16 @@ pipeline {
         stage('Checkout Code') {
             steps {
                 checkout scm
+            }
+        }
+
+        stage('Install Java') {
+            steps {
+                sh """
+                    apt-get update
+                    apt-get install -y openjdk-17-jdk
+                    java -version
+                """
             }
         }
 
@@ -50,6 +61,9 @@ pipeline {
                     // Run tests and capture exit code
                     def exitCode = sh(
                         script: """
+                            export JAVA_HOME=${JAVA_HOME}
+                            export PATH=\$JAVA_HOME/bin:\$PATH
+
                             npm ci
                             ${testCommand}
                         """,
@@ -58,14 +72,17 @@ pipeline {
 
                     // Always generate Allure report
                     sh """
+                        export JAVA_HOME=${JAVA_HOME}
+                        export PATH=\$JAVA_HOME/bin:\$PATH
+
                         echo "Generating Allure report..."
                         npx allure generate allure-results --clean -o allure-report
+
                         echo "===== Checking Allure Folder ====="
                         ls -la
                         ls -la allure-report || true
                     """
 
-                    // Mark build failed if tests failed
                     if (exitCode != 0) {
                         currentBuild.result = 'FAILURE'
                     }
@@ -75,12 +92,10 @@ pipeline {
 
         stage('Upload Allure Report to S3') {
             steps {
-                script {
-                    sh """
-                        echo "Uploading full Allure report..."
-                        aws s3 sync allure-report/ s3://${S3_BUCKET}/${BUILD_FOLDER}/ --delete
-                    """
-                }
+                sh """
+                    echo "Uploading full Allure report..."
+                    aws s3 sync allure-report/ s3://${S3_BUCKET}/${BUILD_FOLDER}/ --delete
+                """
             }
         }
     }
