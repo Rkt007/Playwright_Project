@@ -68,14 +68,13 @@ pipeline {
         }
 
         stage('Upload Allure Report to S3') {
-            steps {
-                sh """
-                    aws s3 sync allure-report/ \
-                    s3://${S3_BUCKET}/${BUILD_FOLDER}/ \
-                    --delete
-                """
-            }
-        }
+    steps {
+        sh """
+            echo "Uploading full Allure report..."
+            aws s3 sync allure-report/ s3://${S3_BUCKET}/${BUILD_FOLDER}/ --delete
+        """
+    }
+}
     }
 
     post {
