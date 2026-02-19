@@ -1,6 +1,6 @@
 import { test } from '@playwright/test';
 
-test('browser navigation actions', async ({ page }) => {
+test('@smoke browser navigation actions', async ({ page }) => {
 
   await page.goto('https://example.com');
 

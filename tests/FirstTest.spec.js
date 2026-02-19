@@ -1,6 +1,6 @@
 import { test, expect } from '@playwright/test';
 
-test('open google page and check title', async ({ page }) => {
+test('@smoke open google page and check title', async ({ page }) => {
   await page.goto('https://www.google.com');
 
   const pagetitle = await page.title();

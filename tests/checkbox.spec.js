@@ -1,6 +1,6 @@
 import { test, expect } from '@playwright/test';
 
-test('checkbox test', async ({ page }) => {
+test('@smoke checkbox test', async ({ page }) => {
   await page.goto('https://www.techlistic.com/p/selenium-practice-form.html', {
     waitUntil: 'domcontentloaded'
   });
