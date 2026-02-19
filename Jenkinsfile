@@ -1,7 +1,7 @@
 pipeline {
     agent {
         docker {
-            image 'mcr.microsoft.com/playwright:v1.40.0-jammy'
+            image 'mcr.microsoft.com/playwright:v1.58.0-jammy'
             args '-u root --ipc=host'
         }
     }
@@ -48,7 +48,6 @@ pipeline {
 
                     sh """
                         npm ci
-                        npx playwright install
                         ${testCommand}
                     """
                 }
