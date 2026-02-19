@@ -1,6 +1,6 @@
 import { test, expect } from '@playwright/test';
 
-test('Mouse Right Click practice', async ({ page }) => {
+test('@smoke Mouse Right Click practice', async ({ page }) => {
 
   await page.goto('https://testautomationpractice.blogspot.com/');
 
