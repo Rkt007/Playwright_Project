@@ -1,11 +1,13 @@
 pipeline {
 
     agent {
-        docker {
-            image '102783063324.dkr.ecr.eu-north-1.amazonaws.com/playwright-framework:latest'
-            args '-u root --ipc=host'
-        }
+    docker {
+        image '102783063324.dkr.ecr.eu-north-1.amazonaws.com/playwright-framework:latest'
+        args '-u root --ipc=host --entrypoint=""'
+        reuseNode true
     }
+}
+
 
     options {
         timestamps()
