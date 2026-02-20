@@ -47,15 +47,23 @@ pipeline {
         }
 
         stage('Install Dependencies') {
-            steps {
-                sh '''
-                    apt-get update
-                    apt-get install -y openjdk-17-jdk awscli
-                    java -version
-                    aws --version
-                '''
-            }
-        }
+    steps {
+        sh '''
+            export DEBIAN_FRONTEND=noninteractive
+
+            apt-get update
+            apt-get install -y openjdk-17-jdk awscli tzdata
+
+            # Set timezone to Asia/Kolkata
+            ln -fs /usr/share/zoneinfo/Asia/Kolkata /etc/localtime
+            dpkg-reconfigure --frontend noninteractive tzdata
+
+            java -version
+            aws --version
+        '''
+    }
+}
+
 
         stage('Install & Run Tests') {
             steps {
