@@ -24,9 +24,7 @@ pipeline {
     environment {
         S3_BUCKET = "rahul-playwright-reports-2026"
         BUILD_FOLDER = "build-${BUILD_NUMBER}"
-        JAVA_HOME = "/usr/lib/jvm/java-17-openjdk-amd64"
         AWS_DEFAULT_REGION = "eu-north-1"
-        AWS_REGION = "eu-north-1"
     }
 
     stages {
@@ -37,17 +35,12 @@ pipeline {
             }
         }
 
-        stage('Login to AWS ECR') {
+        stage('Login to AWS ECR (IAM Role)') {
             steps {
-                withCredentials([[
-                    $class: 'AmazonWebServicesCredentialsBinding',
-                    credentialsId: 'aws-credentials'
-                ]]) {
-                    sh '''
-                        aws ecr get-login-password --region eu-north-1 | \
-                        docker login --username AWS --password-stdin 102783063324.dkr.ecr.eu-north-1.amazonaws.com
-                    '''
-                }
+                sh '''
+                    aws ecr get-login-password --region eu-north-1 | \
+                    docker login --username AWS --password-stdin 102783063324.dkr.ecr.eu-north-1.amazonaws.com
+                '''
             }
         }
 
@@ -67,16 +60,14 @@ pipeline {
             }
         }
 
-        stage('Upload Allure Report to S3') {
+        stage('Upload Allure Report to S3 (IAM Role)') {
             steps {
-                withCredentials([[
-                    $class: 'AmazonWebServicesCredentialsBinding',
-                    credentialsId: 'aws-credentials'
-                ]]) {
-                    sh '''
-                        aws s3 sync allure-report/ s3://${S3_BUCKET}/${BUILD_FOLDER}/ --delete
-                    '''
-                }
+                sh '''
+                    if [ -d allure-report ]; then
+                        aws s3 sync allure-report/ \
+                        s3://${S3_BUCKET}/${BUILD_FOLDER}/ --delete
+                    fi
+                '''
             }
         }
     }
@@ -85,7 +76,7 @@ pipeline {
         always {
             echo "=============================="
             echo "Allure report available at:"
-            echo "https://${env.S3_BUCKET}.s3.${env.AWS_REGION}.amazonaws.com/${env.BUILD_FOLDER}/index.html"
+            echo "https://${env.S3_BUCKET}.s3.${env.AWS_DEFAULT_REGION}.amazonaws.com/${env.BUILD_FOLDER}/index.html"
             echo "=============================="
         }
     }
