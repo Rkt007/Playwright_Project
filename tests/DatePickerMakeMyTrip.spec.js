@@ -2,14 +2,18 @@ import { test, expect } from "@playwright/test";
 
 test('makemytrip datepicker', async ({ page }) => {
 
-  await page.goto('https://www.makemytrip.com/');
-  await page.waitForLoadState('domcontentloaded');
+  await page.goto('https://www.makemytrip.com/', { waitUntil: 'domcontentloaded'});
 
-  // Close chatbot
-  await page.getByAltText('minimize').click();
+  // Safe popup handling
+  const chatbot = page.getByAltText('minimize');
+  if (await chatbot.isVisible().catch(() => false)) {
+    await chatbot.click();
+  }
 
-  // Close login popup
-  await page.locator('.commonModal__close').click();
+  const loginClose = page.locator('.commonModal__close');
+  if (await loginClose.isVisible().catch(() => false)) {
+    await loginClose.click();
+  }
 
   // Open date picker
   await page.locator('//span[@class="lbl_input appendBottom10"]').nth(3).click();
@@ -20,23 +24,25 @@ test('makemytrip datepicker', async ({ page }) => {
   const nextButton = page.locator('.DayPicker-NavButton--next');
   const monthCaption = page.locator('.DayPicker-Caption').first();
 
-  // Navigate to target month
-  for (let i = 0; i < 24; i++) { // safety limit
+  for (let i = 0; i < 24; i++) {
+
     const monthYearText = await monthCaption.innerText();
 
-    if (monthYearText.includes(targetMonthYear)) {
-      break;
-    }
+    if (monthYearText.includes(targetMonthYear)) break;
+
     await nextButton.click();
-    await page.waitForTimeout(500);
+
+    // wait for month to change (no hard wait)
+    await expect(monthCaption).not.toHaveText(monthYearText);
   }
 
-  // Select date
   const dates = page.locator(
     '.DayPicker-Day:not(.DayPicker-Day--disabled)'
   );
 
-  for (let i = 0; i < await dates.count(); i++) {
+  const count = await dates.count();
+
+  for (let i = 0; i < count; i++) {
     const dateText = await dates.nth(i).innerText();
     if (dateText.trim() === targetDate) {
       await dates.nth(i).click();

@@ -8,28 +8,28 @@ await page.waitForLoadState('domcontentloaded')
 await page.locator('data-testid=departureDate').click(); 
 
 const targetDate = '31'; 
-const targetMonthYear = 'January 2026'; 
+const targetMonthYear = 'January 2027'; 
 // const nextbutton 
 const nextbutton = await page.locator('button.react-calendar__navigation__next-button')
 
+
  while(true) { 
-const MonthYear =await page.getByText('January 2026').textContent(); 
-if (MonthYear ===targetMonthYear) {
- break ; 
- } 
- 
- //await nextbutton.click(); 
+const MonthYear = await page.locator('.react-calendar__navigation__label__labelText--from').innerText();
+if (MonthYear === targetMonthYear) {
  // dates 
- const dates =await page.locator('//div[contains(@class,"react-calendar__month-view__days")]//div') 
+ const dates = await page.locator('//div[contains(@class,"react-calendar__month-view__days")]//div'); 
+ const count = await dates.count(); 
  for (let i = 0; i < count; i++) { 
  const dayText = (await dates.nth(i).innerText()).trim(); 
- const count = await dates.count(); 
  if (dayText === targetDate) { 
  await dates.nth(i).click(); 
  console.log(`Date selected: ${targetDate} ${targetMonthYear}`);
-      break;
+ break;
  } 
  } 
+ break;
+ } 
+ await nextbutton.click(); 
  } 
  });
  

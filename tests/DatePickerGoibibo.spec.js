@@ -2,11 +2,20 @@ import { test, expect } from "@playwright/test";
 
 test('goibibo datepicker', async ({ page }) => {
 
-  await page.goto('https://www.goibibo.com/flights/', { waitUntil: 'networkidle'});
 
+ // networkidle means:
+//Wait until there are no network requests for 500ms.
+//But Goibibo: Runs analytics calls continuously // Has background APIs //Ads + tracking script Lazy loading
+
+//So network never becomes fully idle ❌
+//Playwright waits
+//Timeout happens 
+//so need to run goibo in headed mode 
+//await page.goto('https://www.goibibo.com/flights/', { waitUntil: 'networkidle'});
+await page.goto('https://www.goibibo.com/flights/', { waitUntil: 'domcontentloaded'});
   // Close login popup safely
   const popup = page.locator('.logSprite.icClose');
-  if (await popup.isVisible({ timeout: 5000 })) {
+  if (await popup.isVisible({ timeout: 12000 })) {
     await popup.click();
   }
 
