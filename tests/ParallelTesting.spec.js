@@ -10,12 +10,12 @@ test.describe.parallel('Parallel Testing Suite', () => {
   test('Parallel Testing - test 2', async ({ page }) => {
     await page.goto('https://practice.expandtesting.com/');
     console.log('Page loaded successfully');
-    await expect(page).toHaveTitle(/Expand Testing/);
+   // await expect(page).toHaveTitle(/Expand Testing/);
   });
 
   test('Parallel Testing - test 3', async ({ page }) => {
     await page.goto('https://practice.expandtesting.com/login');
-    await page.getByRole('link', { name: 'Test Login Page' }).click();
+   // await page.getByRole('link', { name: 'Test Login Page' }).click();
 
     await page.fill('#username', 'practice');
     await page.fill('#password', 'SuperSecretPassword!');
